@@ -1,0 +1,1325 @@
+[scau-mall-web] 22:27:16.709 [main] INFO  org.scau.mall.web.MallWebApplication - Starting MallWebApplication on DESKTOP-KEBSTMU with PID 21120 (D:\workspace-xrk\scau-mall\scau-mall\scau-mall-web\target\classes started by John in D:\workspace-xrk\scau-mall\scau-mall\scau-mall-web)
+[scau-mall-web] 22:27:16.752 [main] DEBUG org.scau.mall.web.MallWebApplication - Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+[scau-mall-web] 22:27:16.752 [main] INFO  org.scau.mall.web.MallWebApplication - No active profile set, falling back to default profiles: default
+[scau-mall-web] 22:27:16.986 [main] INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@635572a7: startup date [Sun Sep 25 22:27:16 CST 2022]; root of context hierarchy
+[scau-mall-web] 22:27:17.956 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+[scau-mall-web] 22:27:20.174 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[scau-mall-web] 22:27:21.899 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'druidDataSourceConfig' of type [org.scau.mall.config.datasource.DruidDataSourceConfig$$EnhancerBySpringCGLIB$$62b6b17a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 22:27:21.902 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dynamicDataSourceConfig' of type [org.scau.mall.config.datasource.DynamicDataSourceConfig$$EnhancerBySpringCGLIB$$f871317] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 22:27:27.240 [main] ERROR com.alibaba.druid.pool.DruidDataSource - init datasource error, url: jdbc:mysql://localhost:3306/scau_mall_master?useUnicode=true&characterEncoding=utf8&ApplicationName=xrk-mall-drp
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2188)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2016)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:632)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:934)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:930)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:102)
+	at org.springframework.jdbc.datasource.LazyConnectionDataSourceProxy.afterPropertiesSet(LazyConnectionDataSourceProxy.java:162)
+	at org.springframework.jdbc.datasource.LazyConnectionDataSourceProxy.<init>(LazyConnectionDataSourceProxy.java:106)
+	at org.scau.mall.config.datasource.DruidDataSourceConfig.targetDataSource(DruidDataSourceConfig.java:120)
+	at org.scau.mall.config.datasource.DruidDataSourceConfig.targetDataSource(DruidDataSourceConfig.java:124)
+	at org.scau.mall.config.datasource.DynamicDataSourceConfig.dataSource(DynamicDataSourceConfig.java:45)
+	at org.scau.mall.config.datasource.DynamicDataSourceConfig$$EnhancerBySpringCGLIB$$f871317.CGLIB$dataSource$0(<generated>)
+	at org.scau.mall.config.datasource.DynamicDataSourceConfig$$EnhancerBySpringCGLIB$$f871317$$FastClassBySpringCGLIB$$3298ece3.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358)
+	at org.scau.mall.config.datasource.DynamicDataSourceConfig$$EnhancerBySpringCGLIB$$f871317.dataSource(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1071)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1268)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1071)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1346)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1253)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getTypeForFactoryBean(AbstractBeanFactory.java:1514)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:816)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:564)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:432)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:395)
+	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:206)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1267)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1101)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1346)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1253)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getTypeForFactoryBean(AbstractBeanFactory.java:1514)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:816)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:564)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:432)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:395)
+	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:206)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1267)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1101)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1346)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1253)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getTypeForFactoryBean(AbstractBeanFactory.java:1514)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:816)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:564)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:432)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:395)
+	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:206)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1267)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1101)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1346)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1253)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getTypeForFactoryBean(AbstractBeanFactory.java:1514)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:816)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:564)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:432)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:395)
+	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:206)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1267)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1101)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1346)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1253)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getTypeForFactoryBean(AbstractBeanFactory.java:1514)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:816)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:564)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:432)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:395)
+	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:206)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1267)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1101)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1346)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1253)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getTypeForFactoryBean(AbstractBeanFactory.java:1514)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:816)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:564)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:432)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:395)
+	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:206)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1267)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1101)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1071)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:225)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:703)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:528)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at org.scau.mall.web.MallWebApplication.main(MallWebApplication.java:18)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301)
+	... 184 common frames omitted
+[scau-mall-web] 22:27:27.282 [main] ERROR com.alibaba.druid.pool.DruidDataSource - dataSource init error
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2188)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2016)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:632)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:934)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:930)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:102)
+	at org.springframework.jdbc.datasource.LazyConnectionDataSourceProxy.afterPropertiesSet(LazyConnectionDataSourceProxy.java:162)
+	at org.springframework.jdbc.datasource.LazyConnectionDataSourceProxy.<init>(LazyConnectionDataSourceProxy.java:106)
+	at org.scau.mall.config.datasource.DruidDataSourceConfig.targetDataSource(DruidDataSourceConfig.java:120)
+	at org.scau.mall.config.datasource.DruidDataSourceConfig.targetDataSource(DruidDataSourceConfig.java:124)
+	at org.scau.mall.config.datasource.DynamicDataSourceConfig.dataSource(DynamicDataSourceConfig.java:45)
+	at org.scau.mall.config.datasource.DynamicDataSourceConfig$$EnhancerBySpringCGLIB$$f871317.CGLIB$dataSource$0(<generated>)
+	at org.scau.mall.config.datasource.DynamicDataSourceConfig$$EnhancerBySpringCGLIB$$f871317$$FastClassBySpringCGLIB$$3298ece3.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358)
+	at org.scau.mall.config.datasource.DynamicDataSourceConfig$$EnhancerBySpringCGLIB$$f871317.dataSource(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1071)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1268)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1071)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1346)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1253)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getTypeForFactoryBean(AbstractBeanFactory.java:1514)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:816)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:564)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:432)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:395)
+	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:206)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1267)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1101)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1346)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1253)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getTypeForFactoryBean(AbstractBeanFactory.java:1514)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:816)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:564)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:432)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:395)
+	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:206)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1267)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1101)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1346)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1253)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getTypeForFactoryBean(AbstractBeanFactory.java:1514)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:816)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:564)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:432)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:395)
+	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:206)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1267)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1101)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1346)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1253)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getTypeForFactoryBean(AbstractBeanFactory.java:1514)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:816)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:564)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:432)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:395)
+	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:206)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1267)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1101)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1346)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1253)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getTypeForFactoryBean(AbstractBeanFactory.java:1514)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:816)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:564)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:432)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:395)
+	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:206)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1267)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1101)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1346)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1253)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getTypeForFactoryBean(AbstractBeanFactory.java:1514)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:816)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:564)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:432)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:395)
+	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:206)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1267)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1101)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1071)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:225)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:703)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:528)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at org.scau.mall.web.MallWebApplication.main(MallWebApplication.java:18)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301)
+	... 184 common frames omitted
+[scau-mall-web] 22:27:27.295 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[scau-mall-web] 22:27:27.295 [main] WARN  org.springframework.jdbc.datasource.LazyConnectionDataSourceProxy - Could not retrieve default auto-commit and transaction isolation settings
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2188)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2016)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:632)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:934)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:930)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:102)
+	at org.springframework.jdbc.datasource.LazyConnectionDataSourceProxy.afterPropertiesSet(LazyConnectionDataSourceProxy.java:162)
+	at org.springframework.jdbc.datasource.LazyConnectionDataSourceProxy.<init>(LazyConnectionDataSourceProxy.java:106)
+	at org.scau.mall.config.datasource.DruidDataSourceConfig.targetDataSource(DruidDataSourceConfig.java:120)
+	at org.scau.mall.config.datasource.DruidDataSourceConfig.targetDataSource(DruidDataSourceConfig.java:124)
+	at org.scau.mall.config.datasource.DynamicDataSourceConfig.dataSource(DynamicDataSourceConfig.java:45)
+	at org.scau.mall.config.datasource.DynamicDataSourceConfig$$EnhancerBySpringCGLIB$$f871317.CGLIB$dataSource$0(<generated>)
+	at org.scau.mall.config.datasource.DynamicDataSourceConfig$$EnhancerBySpringCGLIB$$f871317$$FastClassBySpringCGLIB$$3298ece3.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358)
+	at org.scau.mall.config.datasource.DynamicDataSourceConfig$$EnhancerBySpringCGLIB$$f871317.dataSource(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1071)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1268)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1071)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1346)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1253)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getTypeForFactoryBean(AbstractBeanFactory.java:1514)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:816)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:564)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:432)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:395)
+	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:206)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1267)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1101)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1346)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1253)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getTypeForFactoryBean(AbstractBeanFactory.java:1514)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:816)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:564)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:432)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:395)
+	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:206)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1267)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1101)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1346)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1253)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getTypeForFactoryBean(AbstractBeanFactory.java:1514)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:816)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:564)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:432)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:395)
+	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:206)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1267)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1101)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1346)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1253)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getTypeForFactoryBean(AbstractBeanFactory.java:1514)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:816)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:564)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:432)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:395)
+	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:206)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1267)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1101)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1346)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1253)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getTypeForFactoryBean(AbstractBeanFactory.java:1514)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:816)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:564)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:432)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:395)
+	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:206)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1267)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1101)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1346)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1253)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getTypeForFactoryBean(AbstractBeanFactory.java:1514)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:816)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:564)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:432)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:395)
+	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:206)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1267)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1101)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1071)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:225)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:703)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:528)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at org.scau.mall.web.MallWebApplication.main(MallWebApplication.java:18)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301)
+	... 184 common frames omitted
+[scau-mall-web] 22:27:27.321 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dataSource' of type [org.scau.mall.config.datasource.DynamicDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 22:27:27.325 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'mybatisConfig' of type [org.scau.mall.config.MybatisConfig$$EnhancerBySpringCGLIB$$51c166ab] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 22:27:28.343 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 22:27:28.359 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'pmsUserMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 22:27:28.364 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'pmsOrdersMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 22:27:28.368 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'pmsMenuMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 22:27:28.371 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'pmsClientMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 22:27:28.384 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'pmsClientLoanRecordMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 22:27:28.389 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'ordersMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 22:27:28.685 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [org.scau.mall.config.redis.RedisConfig$$EnhancerBySpringCGLIB$$56b7eb00] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 22:27:29.292 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$85c53de1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 22:27:29.637 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3cb307c3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 22:27:29.842 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$d560cffd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 22:27:29.869 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 22:27:29.879 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@3a00b15d' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 22:27:29.899 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$fa3572af] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 22:27:29.995 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 22:27:31.700 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8082 (http)
+[scau-mall-web] 22:27:31.754 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+[scau-mall-web] 22:27:31.808 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+[scau-mall-web] 22:27:31.809 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.29
+[scau-mall-web] 22:27:32.277 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[scau-mall-web] 22:27:32.277 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 15291 ms
+[scau-mall-web] 22:27:34.995 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[scau-mall-web] 22:27:34.998 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[scau-mall-web] 22:27:34.998 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[scau-mall-web] 22:27:34.998 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[scau-mall-web] 22:27:35.003 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+[scau-mall-web] 22:27:35.003 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'corsFilter' to: [/*]
+[scau-mall-web] 22:27:35.003 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'jwtAuthencationTokenFilter' to: [/*]
+[scau-mall-web] 22:27:35.004 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+[scau-mall-web] 22:27:35.090 [localhost-startStop-1] DEBUG org.scau.mall.web.security.filter.JwtAuthencationTokenFilter - Initializing filter 'jwtAuthencationTokenFilter'
+[scau-mall-web] 22:27:35.091 [localhost-startStop-1] DEBUG org.scau.mall.web.security.filter.JwtAuthencationTokenFilter - Filter 'jwtAuthencationTokenFilter' configured successfully
+[scau-mall-web] 22:27:36.631 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/register'], []
+[scau-mall-web] 22:27:36.632 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/login'], []
+[scau-mall-web] 22:27:36.632 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/login/**'], []
+[scau-mall-web] 22:27:36.632 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/test/**'], []
+[scau-mall-web] 22:27:36.632 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/logout'], []
+[scau-mall-web] 22:27:36.632 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/index_files/**'], []
+[scau-mall-web] 22:27:36.632 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/master_files/**'], []
+[scau-mall-web] 22:27:36.632 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/pageJs/**'], []
+[scau-mall-web] 22:27:36.632 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='bg_up.png'], []
+[scau-mall-web] 22:27:36.632 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='common.js'], []
+[scau-mall-web] 22:27:36.632 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/templates/**'], []
+[scau-mall-web] 22:27:36.632 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/index.html'], []
+[scau-mall-web] 22:27:36.632 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='favicon.ico'], []
+[scau-mall-web] 22:27:36.632 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/doc.html'], []
+[scau-mall-web] 22:27:36.633 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/webjars/**'], []
+[scau-mall-web] 22:27:36.633 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/swagger-resources/**'], []
+[scau-mall-web] 22:27:36.633 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/v2/api-docs/**'], []
+[scau-mall-web] 22:27:36.633 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/captcha'], []
+[scau-mall-web] 22:27:36.633 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/ws/**'], []
+[scau-mall-web] 22:27:36.642 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/api/v1/customer/add'], []
+[scau-mall-web] 22:27:37.107 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6aae0e6f, org.springframework.security.web.context.SecurityContextPersistenceFilter@77083e41, org.springframework.security.web.header.HeaderWriterFilter@571a663c, org.springframework.web.filter.CorsFilter@708ab752, org.springframework.security.web.authentication.logout.LogoutFilter@5fd43e58, org.scau.mall.web.security.filter.JwtAuthencationTokenFilter@785113f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2d130ac4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6650a6c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@37775bb1, org.springframework.security.web.session.SessionManagementFilter@7b8ea1db, org.springframework.security.web.access.ExceptionTranslationFilter@78b03788, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2d4a3e13]
+[scau-mall-web] 22:27:40.112 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@635572a7: startup date [Sun Sep 25 22:27:16 CST 2022]; root of context hierarchy
+[scau-mall-web] 22:27:40.550 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/login],methods=[POST]}" onto public org.scau.mall.vo.resp.CommonRespone<org.scau.mall.web.vo.UsersVo> org.scau.mall.web.controller.AuthController.login(org.scau.mall.web.security.pojo.LoginDto,javax.servlet.http.HttpServletRequest)
+[scau-mall-web] 22:27:40.554 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/register],methods=[POST]}" onto public org.scau.mall.vo.resp.CommonRespone<org.scau.mall.service.pojo.PmsUser> org.scau.mall.web.controller.AuthController.registerUser(java.util.Map<java.lang.String, java.lang.String>)
+[scau-mall-web] 22:27:40.555 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/get],methods=[GET]}" onto public java.lang.String org.scau.mall.web.controller.AuthController.aaa()
+[scau-mall-web] 22:27:40.559 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/clients],methods=[GET]}" onto public org.scau.mall.vo.resp.CommonRespone<org.scau.mall.web.vo.PageShowVo<org.scau.mall.web.vo.ClientsVo>> org.scau.mall.web.controller.client.ClientController.clients(org.scau.mall.web.vo.QueryVo,javax.servlet.http.HttpServletRequest)
+[scau-mall-web] 22:27:40.573 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/api/v1/customer/index],methods=[GET]}" onto public java.lang.String org.scau.mall.web.controller.CustomerController.index(javax.servlet.http.HttpServletRequest,org.scau.mall.vo.ClientLoadRecordVo)
+[scau-mall-web] 22:27:40.574 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/api/v1/customer/add]}" onto public org.scau.mall.vo.resp.ResponeData<java.lang.Object> org.scau.mall.web.controller.CustomerController.add(javax.servlet.http.HttpServletRequest,org.scau.mall.vo.ClientLoadRecordVo)
+[scau-mall-web] 22:27:40.575 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/api/v1/customer/list]}" onto public org.scau.mall.vo.resp.ResponeData<org.scau.mall.vo.PmsClientShowVo> org.scau.mall.web.controller.CustomerController.list(javax.servlet.http.HttpServletRequest,org.scau.mall.vo.PmsClientQueryVo)
+[scau-mall-web] 22:27:40.576 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/api/v1/customer/middle]}" onto public java.lang.String org.scau.mall.web.controller.CustomerController.middle(org.springframework.ui.ModelMap)
+[scau-mall-web] 22:27:40.576 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/api/v1/customer/encodeImg]}" onto public void org.scau.mall.web.controller.CustomerController.encodeImg(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+[scau-mall-web] 22:27:40.578 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/fdfs_upload],methods=[POST]}" onto public org.scau.mall.vo.resp.CommonRespone<java.lang.Object> org.scau.mall.web.controller.file.FileController.fileUpload(org.springframework.web.multipart.MultipartFile)
+[scau-mall-web] 22:27:40.581 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/test/index]}" onto public java.lang.String org.scau.mall.web.controller.IndexController.index(org.springframework.ui.ModelMap)
+[scau-mall-web] 22:27:40.582 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/test/middle]}" onto public java.lang.String org.scau.mall.web.controller.IndexController.middle(org.springframework.ui.ModelMap)
+[scau-mall-web] 22:27:40.583 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/test/encodeImg]}" onto public void org.scau.mall.web.controller.IndexController.encodeImg(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+[scau-mall-web] 22:27:40.585 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/login/index]}" onto public java.lang.String org.scau.mall.web.controller.LoginController.index(org.springframework.ui.ModelMap)
+[scau-mall-web] 22:27:40.585 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/login/submit]}" onto public java.lang.String org.scau.mall.web.controller.LoginController.submit(org.springframework.ui.ModelMap)
+[scau-mall-web] 22:27:40.587 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/menus],methods=[GET]}" onto public org.scau.mall.vo.resp.CommonRespone<java.util.List<org.scau.mall.web.vo.MenusVo>> org.scau.mall.web.controller.MenuController.menus(javax.servlet.http.HttpServletRequest)
+[scau-mall-web] 22:27:40.590 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/approveSubmit],methods=[POST]}" onto public org.scau.mall.vo.resp.CommonRespone<java.lang.Object> org.scau.mall.web.controller.order.OrderController.approveSubmit(org.scau.mall.web.vo.ApproveFormBody,javax.servlet.http.HttpServletRequest)
+[scau-mall-web] 22:27:40.591 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/orders],methods=[GET]}" onto public org.scau.mall.vo.resp.CommonRespone<org.scau.mall.web.vo.PageShowVo<org.scau.mall.web.vo.OrdersVo>> org.scau.mall.web.controller.order.OrderController.orders(org.scau.mall.web.vo.QueryVo,javax.servlet.http.HttpServletRequest)
+[scau-mall-web] 22:27:40.591 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/verifyPass],methods=[POST]}" onto public org.scau.mall.vo.resp.CommonRespone<java.lang.Object> org.scau.mall.web.controller.order.OrderController.verifyPass(org.scau.mall.web.vo.AuditFormBody,javax.servlet.http.HttpServletRequest)
+[scau-mall-web] 22:27:40.605 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/users],methods=[GET]}" onto public org.scau.mall.vo.resp.CommonRespone<org.scau.mall.web.vo.PageShowVo<org.scau.mall.web.vo.UsersVo>> org.scau.mall.web.controller.user.UserController.users(org.scau.mall.web.vo.QueryVo,javax.servlet.http.HttpServletRequest)
+[scau-mall-web] 22:27:40.615 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/users/{id}],methods=[GET]}" onto public org.scau.mall.vo.resp.CommonRespone<org.scau.mall.web.vo.UsersVo> org.scau.mall.web.controller.user.UserController.getUserById(java.lang.Integer)
+[scau-mall-web] 22:27:40.622 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/users/{id}],methods=[DELETE]}" onto public org.scau.mall.vo.resp.CommonRespone<org.scau.mall.web.vo.UsersVo> org.scau.mall.web.controller.user.UserController.deleteUser(java.lang.Integer)
+[scau-mall-web] 22:27:40.623 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/users],methods=[POST]}" onto public org.scau.mall.vo.resp.CommonRespone<org.scau.mall.web.vo.UsersVo> org.scau.mall.web.controller.user.UserController.addUsers(org.scau.mall.service.pojo.PmsUser)
+[scau-mall-web] 22:27:40.625 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/users/{id}],methods=[PUT]}" onto public org.scau.mall.vo.resp.CommonRespone<org.scau.mall.web.vo.UsersVo> org.scau.mall.web.controller.user.UserController.editUser(java.lang.Integer,java.util.Map<java.lang.String, java.lang.String>)
+[scau-mall-web] 22:27:40.625 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/users/{id}/state/{mg_state}],methods=[PUT]}" onto public org.scau.mall.vo.resp.CommonRespone<org.scau.mall.web.vo.UsersVo> org.scau.mall.web.controller.user.UserController.changeUserStatus(java.lang.Integer,boolean)
+[scau-mall-web] 22:27:40.630 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[scau-mall-web] 22:27:40.632 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[scau-mall-web] 22:27:41.077 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[scau-mall-web] 22:27:41.077 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[scau-mall-web] 22:27:42.070 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[scau-mall-web] 22:27:44.193 [main] INFO  org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+[scau-mall-web] 22:27:46.268 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[scau-mall-web] 22:27:46.330 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+[scau-mall-web] 22:27:46.409 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+[scau-mall-web] 22:27:46.533 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8082 (http)
+[scau-mall-web] 22:27:46.559 [main] INFO  org.scau.mall.web.MallWebApplication - Started MallWebApplication in 32.404 seconds (JVM running for 40.046)
+[scau-mall-web] 22:31:15.030 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[scau-mall-web] 22:31:15.030 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[scau-mall-web] 22:31:15.160 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 130 ms
+[scau-mall-web] 22:31:15.697 [http-nio-8082-exec-1] DEBUG org.scau.mall.config.datasource.DynamicDataSource - Use Default datasource : db_master
+[scau-mall-web] 22:31:19.857 [Druid-ConnectionPool-Create-734230775] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://localhost:3306/scau_mall_master?useUnicode=true&characterEncoding=utf8&ApplicationName=xrk-mall-drp
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2188)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2016)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1861)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301)
+	... 15 common frames omitted
+[scau-mall-web] 22:31:23.927 [Druid-ConnectionPool-Create-734230775] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://localhost:3306/scau_mall_master?useUnicode=true&characterEncoding=utf8&ApplicationName=xrk-mall-drp
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2188)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2016)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1861)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301)
+	... 15 common frames omitted
+[scau-mall-web] 22:31:28.021 [Druid-ConnectionPool-Create-734230775] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://localhost:3306/scau_mall_master?useUnicode=true&characterEncoding=utf8&ApplicationName=xrk-mall-drp
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2188)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2016)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1861)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301)
+	... 15 common frames omitted
+[scau-mall-web] 22:31:32.094 [Druid-ConnectionPool-Create-734230775] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://localhost:3306/scau_mall_master?useUnicode=true&characterEncoding=utf8&ApplicationName=xrk-mall-drp
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2188)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2016)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1861)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301)
+	... 15 common frames omitted
+[scau-mall-web] 22:31:36.192 [Druid-ConnectionPool-Create-734230775] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://localhost:3306/scau_mall_master?useUnicode=true&characterEncoding=utf8&ApplicationName=xrk-mall-drp
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2188)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2016)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1861)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301)
+	... 15 common frames omitted
+[scau-mall-web] 22:31:40.283 [Druid-ConnectionPool-Create-734230775] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://localhost:3306/scau_mall_master?useUnicode=true&characterEncoding=utf8&ApplicationName=xrk-mall-drp
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2188)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2016)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1861)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301)
+	... 15 common frames omitted
+[scau-mall-web] 22:31:42.924 [http-nio-8082-exec-1] DEBUG org.scau.mall.config.datasource.DynamicDataSource - Use Default datasource : db_master
+[scau-mall-web] 22:31:42.932 [http-nio-8082-exec-1] DEBUG org.scau.mall.dao.PmsUserMapper.selectByExample - ==>  Preparing: select 'true' as QUERYID, id, username, password, email, mobile, status, created_at, updated_at from pms_user WHERE ( username = ? and status = ? ) 
+[scau-mall-web] 22:31:42.994 [http-nio-8082-exec-1] DEBUG org.scau.mall.dao.PmsUserMapper.selectByExample - ==> Parameters: admin(String), 1(Integer)
+[scau-mall-web] 22:31:43.037 [http-nio-8082-exec-1] DEBUG org.scau.mall.dao.PmsUserMapper.selectByExample - <==      Total: 1
+[scau-mall-web] 22:31:45.393 [http-nio-8082-exec-8] DEBUG org.scau.mall.config.datasource.DynamicDataSource - Use Default datasource : db_master
+[scau-mall-web] 22:31:45.394 [http-nio-8082-exec-8] DEBUG org.scau.mall.dao.PmsUserMapper.selectByExample - ==>  Preparing: select 'true' as QUERYID, id, username, password, email, mobile, status, created_at, updated_at from pms_user WHERE ( username = ? and status = ? ) 
+[scau-mall-web] 22:31:45.394 [http-nio-8082-exec-10] DEBUG org.scau.mall.config.datasource.DynamicDataSource - Use Default datasource : db_master
+[scau-mall-web] 22:31:45.395 [http-nio-8082-exec-10] DEBUG org.scau.mall.dao.PmsUserMapper.selectByExample - ==>  Preparing: select 'true' as QUERYID, id, username, password, email, mobile, status, created_at, updated_at from pms_user WHERE ( username = ? and status = ? ) 
+[scau-mall-web] 22:31:45.395 [http-nio-8082-exec-4] DEBUG org.scau.mall.config.datasource.DynamicDataSource - Use Default datasource : db_master
+[scau-mall-web] 22:31:45.395 [http-nio-8082-exec-5] DEBUG org.scau.mall.config.datasource.DynamicDataSource - Use Default datasource : db_master
+[scau-mall-web] 22:31:45.395 [http-nio-8082-exec-4] DEBUG org.scau.mall.dao.PmsUserMapper.selectByExample - ==>  Preparing: select 'true' as QUERYID, id, username, password, email, mobile, status, created_at, updated_at from pms_user WHERE ( username = ? and status = ? ) 
+[scau-mall-web] 22:31:45.395 [http-nio-8082-exec-8] DEBUG org.scau.mall.dao.PmsUserMapper.selectByExample - ==> Parameters: admin(String), 1(Integer)
+[scau-mall-web] 22:31:45.395 [http-nio-8082-exec-5] DEBUG org.scau.mall.dao.PmsUserMapper.selectByExample - ==>  Preparing: select 'true' as QUERYID, id, username, password, email, mobile, status, created_at, updated_at from pms_user WHERE ( username = ? and status = ? ) 
+[scau-mall-web] 22:31:45.402 [http-nio-8082-exec-8] DEBUG org.scau.mall.dao.PmsUserMapper.selectByExample - <==      Total: 1
+[scau-mall-web] 22:31:45.404 [http-nio-8082-exec-10] DEBUG org.scau.mall.dao.PmsUserMapper.selectByExample - ==> Parameters: admin(String), 1(Integer)
+[scau-mall-web] 22:31:45.414 [http-nio-8082-exec-10] DEBUG org.scau.mall.dao.PmsUserMapper.selectByExample - <==      Total: 1
+[scau-mall-web] 22:31:45.418 [http-nio-8082-exec-5] DEBUG org.scau.mall.dao.PmsUserMapper.selectByExample - ==> Parameters: admin(String), 1(Integer)
+[scau-mall-web] 22:31:45.421 [http-nio-8082-exec-5] DEBUG org.scau.mall.dao.PmsUserMapper.selectByExample - <==      Total: 1
+[scau-mall-web] 22:31:45.431 [http-nio-8082-exec-4] DEBUG org.scau.mall.dao.PmsUserMapper.selectByExample - ==> Parameters: admin(String), 1(Integer)
+[scau-mall-web] 22:31:45.437 [http-nio-8082-exec-4] DEBUG org.scau.mall.dao.PmsUserMapper.selectByExample - <==      Total: 1
+[scau-mall-web] 22:31:45.495 [http-nio-8082-exec-4] DEBUG org.scau.mall.config.datasource.DynamicDataSource - Use Default datasource : db_master
+[scau-mall-web] 22:31:45.496 [http-nio-8082-exec-4] DEBUG org.scau.mall.dao.PmsMenuMapper.selectByExample - ==>  Preparing: select 'true' as QUERYID, id, auth_name, pid, is_leaf, path, status, created_at, updated_at from pms_menu WHERE ( status = ? ) 
+[scau-mall-web] 22:31:45.497 [http-nio-8082-exec-4] DEBUG org.scau.mall.dao.PmsMenuMapper.selectByExample - ==> Parameters: 1(Integer)
+[scau-mall-web] 22:31:45.498 [http-nio-8082-exec-8] DEBUG org.scau.mall.config.datasource.DynamicDataSource - Use Default datasource : db_master
+[scau-mall-web] 22:31:45.499 [http-nio-8082-exec-8] DEBUG org.scau.mall.dao.PmsUserMapper.countByExample - ==>  Preparing: select count(*) from pms_user 
+[scau-mall-web] 22:31:45.500 [http-nio-8082-exec-8] DEBUG org.scau.mall.dao.PmsUserMapper.countByExample - ==> Parameters: 
+[scau-mall-web] 22:31:45.505 [http-nio-8082-exec-8] DEBUG org.scau.mall.dao.PmsUserMapper.countByExample - <==      Total: 1
+[scau-mall-web] 22:31:45.508 [http-nio-8082-exec-8] DEBUG org.scau.mall.config.datasource.DynamicDataSource - Use Default datasource : db_master
+[scau-mall-web] 22:31:45.508 [http-nio-8082-exec-8] DEBUG org.scau.mall.dao.PmsUserMapper.selectByExample - ==>  Preparing: select 'true' as QUERYID, id, username, password, email, mobile, status, created_at, updated_at from pms_user order by created_at desc limit 0,1 
+[scau-mall-web] 22:31:45.510 [http-nio-8082-exec-8] DEBUG org.scau.mall.dao.PmsUserMapper.selectByExample - ==> Parameters: 
+[scau-mall-web] 22:31:45.515 [http-nio-8082-exec-8] DEBUG org.scau.mall.dao.PmsUserMapper.selectByExample - <==      Total: 1
+[scau-mall-web] 22:31:45.516 [http-nio-8082-exec-4] DEBUG org.scau.mall.dao.PmsMenuMapper.selectByExample - <==      Total: 7
+[scau-mall-web] 22:31:45.608 [http-nio-8082-exec-10] DEBUG org.scau.mall.config.datasource.DynamicDataSource - Use Default datasource : db_master
+[scau-mall-web] 22:31:45.609 [http-nio-8082-exec-10] DEBUG org.scau.mall.dao.extend.OrdersMapper.countPmsOrders - ==>  Preparing: select count(1) from pms_client pc left join pms_orders pclr on pc.id=pclr.client_id 
+[scau-mall-web] 22:31:45.609 [http-nio-8082-exec-10] DEBUG org.scau.mall.dao.extend.OrdersMapper.countPmsOrders - ==> Parameters: 
+[scau-mall-web] 22:31:45.625 [http-nio-8082-exec-10] DEBUG org.scau.mall.dao.extend.OrdersMapper.countPmsOrders - <==      Total: 1
+[scau-mall-web] 22:31:45.631 [http-nio-8082-exec-10] DEBUG org.scau.mall.config.datasource.DynamicDataSource - Use Default datasource : db_master
+[scau-mall-web] 22:31:45.631 [http-nio-8082-exec-10] DEBUG org.scau.mall.dao.extend.OrdersMapper.getPmsOrdersList - ==>  Preparing: select pc.id,pc.`name`, pclr.order_no, pclr.client_id, pc.id_number,pc.telephone,pc.address,pclr.type, pclr.apply_amount,pclr.`status`, pclr.created_at,pclr.actual_amount, pclr.audit_time,pclr.approve_time,pclr.document_url from pms_client pc left join pms_orders pclr on pc.id=pclr.client_id ORDER BY pc.created_at DESC LIMIT ? OFFSET ? 
+[scau-mall-web] 22:31:45.632 [http-nio-8082-exec-10] DEBUG org.scau.mall.dao.extend.OrdersMapper.getPmsOrdersList - ==> Parameters: 20(Integer), 0(Integer)
+[scau-mall-web] 22:31:45.651 [http-nio-8082-exec-10] DEBUG org.scau.mall.dao.extend.OrdersMapper.getPmsOrdersList - <==      Total: 18
+[scau-mall-web] 22:31:50.630 [http-nio-8082-exec-6] DEBUG org.scau.mall.config.datasource.DynamicDataSource - Use Default datasource : db_master
+[scau-mall-web] 22:31:50.631 [http-nio-8082-exec-6] DEBUG org.scau.mall.dao.PmsUserMapper.selectByExample - ==>  Preparing: select 'true' as QUERYID, id, username, password, email, mobile, status, created_at, updated_at from pms_user WHERE ( username = ? and status = ? ) 
+[scau-mall-web] 22:31:50.632 [http-nio-8082-exec-6] DEBUG org.scau.mall.dao.PmsUserMapper.selectByExample - ==> Parameters: admin(String), 1(Integer)
+[scau-mall-web] 22:31:50.635 [http-nio-8082-exec-6] DEBUG org.scau.mall.dao.PmsUserMapper.selectByExample - <==      Total: 1
+[scau-mall-web] 22:31:56.394 [http-nio-8082-exec-4] DEBUG org.scau.mall.config.datasource.DynamicDataSource - Use Default datasource : db_master
+[scau-mall-web] 22:31:56.394 [http-nio-8082-exec-4] DEBUG org.scau.mall.dao.PmsUserMapper.selectByExample - ==>  Preparing: select 'true' as QUERYID, id, username, password, email, mobile, status, created_at, updated_at from pms_user WHERE ( username = ? and status = ? ) 
+[scau-mall-web] 22:31:56.402 [http-nio-8082-exec-4] DEBUG org.scau.mall.dao.PmsUserMapper.selectByExample - ==> Parameters: admin(String), 1(Integer)
+[scau-mall-web] 22:31:56.405 [http-nio-8082-exec-4] DEBUG org.scau.mall.dao.PmsUserMapper.selectByExample - <==      Total: 1
+[scau-mall-web] 22:31:56.413 [http-nio-8082-exec-4] DEBUG org.scau.mall.config.datasource.DynamicDataSource - Use Default datasource : db_master
+[scau-mall-web] 22:31:56.414 [http-nio-8082-exec-4] DEBUG org.scau.mall.dao.extend.OrdersMapper.countPmsOrders - ==>  Preparing: select count(1) from pms_client pc left join pms_orders pclr on pc.id=pclr.client_id 
+[scau-mall-web] 22:31:56.414 [http-nio-8082-exec-4] DEBUG org.scau.mall.dao.extend.OrdersMapper.countPmsOrders - ==> Parameters: 
+[scau-mall-web] 22:31:56.415 [http-nio-8082-exec-4] DEBUG org.scau.mall.dao.extend.OrdersMapper.countPmsOrders - <==      Total: 1
+[scau-mall-web] 22:31:56.416 [http-nio-8082-exec-4] DEBUG org.scau.mall.config.datasource.DynamicDataSource - Use Default datasource : db_master
+[scau-mall-web] 22:31:56.416 [http-nio-8082-exec-4] DEBUG org.scau.mall.dao.extend.OrdersMapper.getPmsOrdersList - ==>  Preparing: select pc.id,pc.`name`, pclr.order_no, pclr.client_id, pc.id_number,pc.telephone,pc.address,pclr.type, pclr.apply_amount,pclr.`status`, pclr.created_at,pclr.actual_amount, pclr.audit_time,pclr.approve_time,pclr.document_url from pms_client pc left join pms_orders pclr on pc.id=pclr.client_id ORDER BY pc.created_at DESC LIMIT ? OFFSET ? 
+[scau-mall-web] 22:31:56.416 [http-nio-8082-exec-4] DEBUG org.scau.mall.dao.extend.OrdersMapper.getPmsOrdersList - ==> Parameters: 5(Integer), 0(Integer)
+[scau-mall-web] 22:31:56.421 [http-nio-8082-exec-4] DEBUG org.scau.mall.dao.extend.OrdersMapper.getPmsOrdersList - <==      Total: 5
+[scau-mall-web] 22:32:13.500 [http-nio-8082-exec-2] DEBUG org.scau.mall.config.datasource.DynamicDataSource - Use Default datasource : db_master
+[scau-mall-web] 22:32:13.501 [http-nio-8082-exec-2] DEBUG org.scau.mall.dao.PmsUserMapper.selectByExample - ==>  Preparing: select 'true' as QUERYID, id, username, password, email, mobile, status, created_at, updated_at from pms_user WHERE ( username = ? and status = ? ) 
+[scau-mall-web] 22:32:13.506 [http-nio-8082-exec-2] DEBUG org.scau.mall.dao.PmsUserMapper.selectByExample - ==> Parameters: admin(String), 1(Integer)
+[scau-mall-web] 22:32:13.510 [http-nio-8082-exec-2] DEBUG org.scau.mall.dao.PmsUserMapper.selectByExample - <==      Total: 1
+[scau-mall-web] 22:32:16.259 [http-nio-8082-exec-6] DEBUG org.scau.mall.config.datasource.DynamicDataSource - Use Default datasource : db_master
+[scau-mall-web] 22:32:16.260 [http-nio-8082-exec-6] DEBUG org.scau.mall.dao.PmsClientMapper.countByExample - ==>  Preparing: select count(*) from pms_client 
+[scau-mall-web] 22:32:16.263 [http-nio-8082-exec-6] DEBUG org.scau.mall.dao.PmsClientMapper.countByExample - ==> Parameters: 
+[scau-mall-web] 22:32:16.272 [http-nio-8082-exec-6] DEBUG org.scau.mall.dao.PmsClientMapper.countByExample - <==      Total: 1
+[scau-mall-web] 22:32:16.279 [http-nio-8082-exec-6] DEBUG org.scau.mall.config.datasource.DynamicDataSource - Use Default datasource : db_master
+[scau-mall-web] 22:32:16.279 [http-nio-8082-exec-6] DEBUG org.scau.mall.dao.PmsClientMapper.selectByExample - ==>  Preparing: select 'true' as QUERYID, id, name, id_number, telephone, address, status, created_at, updated_at from pms_client order by created_at desc limit 0,5 
+[scau-mall-web] 22:32:16.280 [http-nio-8082-exec-6] DEBUG org.scau.mall.dao.PmsClientMapper.selectByExample - ==> Parameters: 
+[scau-mall-web] 22:32:16.284 [http-nio-8082-exec-6] DEBUG org.scau.mall.dao.PmsClientMapper.selectByExample - <==      Total: 5
+[scau-mall-web] 22:32:16.398 [http-nio-8082-exec-10] DEBUG org.scau.mall.config.datasource.DynamicDataSource - Use Default datasource : db_master
+[scau-mall-web] 22:32:16.399 [http-nio-8082-exec-10] DEBUG org.scau.mall.dao.PmsUserMapper.selectByExample - ==>  Preparing: select 'true' as QUERYID, id, username, password, email, mobile, status, created_at, updated_at from pms_user WHERE ( username = ? and status = ? ) 
+[scau-mall-web] 22:32:16.400 [http-nio-8082-exec-10] DEBUG org.scau.mall.dao.PmsUserMapper.selectByExample - ==> Parameters: admin(String), 1(Integer)
+[scau-mall-web] 22:32:16.402 [http-nio-8082-exec-10] DEBUG org.scau.mall.dao.PmsUserMapper.selectByExample - <==      Total: 1
+[scau-mall-web] 22:32:16.421 [http-nio-8082-exec-10] DEBUG org.scau.mall.config.datasource.DynamicDataSource - Use Default datasource : db_master
+[scau-mall-web] 22:32:16.422 [http-nio-8082-exec-10] DEBUG org.scau.mall.dao.PmsClientMapper.countByExample - ==>  Preparing: select count(*) from pms_client 
+[scau-mall-web] 22:32:16.422 [http-nio-8082-exec-10] DEBUG org.scau.mall.dao.PmsClientMapper.countByExample - ==> Parameters: 
+[scau-mall-web] 22:32:16.424 [http-nio-8082-exec-10] DEBUG org.scau.mall.dao.PmsClientMapper.countByExample - <==      Total: 1
+[scau-mall-web] 22:32:16.426 [http-nio-8082-exec-10] DEBUG org.scau.mall.config.datasource.DynamicDataSource - Use Default datasource : db_master
+[scau-mall-web] 22:32:16.427 [http-nio-8082-exec-10] DEBUG org.scau.mall.dao.PmsClientMapper.selectByExample - ==>  Preparing: select 'true' as QUERYID, id, name, id_number, telephone, address, status, created_at, updated_at from pms_client order by created_at desc limit 0,5 
+[scau-mall-web] 22:32:16.430 [http-nio-8082-exec-10] DEBUG org.scau.mall.dao.PmsClientMapper.selectByExample - ==> Parameters: 
+[scau-mall-web] 22:32:16.453 [http-nio-8082-exec-10] DEBUG org.scau.mall.dao.PmsClientMapper.selectByExample - <==      Total: 5
+[scau-mall-web] 22:32:16.567 [http-nio-8082-exec-9] DEBUG org.scau.mall.config.datasource.DynamicDataSource - Use Default datasource : db_master
+[scau-mall-web] 22:32:16.567 [http-nio-8082-exec-9] DEBUG org.scau.mall.dao.PmsUserMapper.selectByExample - ==>  Preparing: select 'true' as QUERYID, id, username, password, email, mobile, status, created_at, updated_at from pms_user WHERE ( username = ? and status = ? ) 
+[scau-mall-web] 22:32:16.568 [http-nio-8082-exec-9] DEBUG org.scau.mall.dao.PmsUserMapper.selectByExample - ==> Parameters: admin(String), 1(Integer)
+[scau-mall-web] 22:32:16.575 [http-nio-8082-exec-9] DEBUG org.scau.mall.dao.PmsUserMapper.selectByExample - <==      Total: 1
+[scau-mall-web] 22:32:16.602 [http-nio-8082-exec-9] DEBUG org.scau.mall.config.datasource.DynamicDataSource - Use Default datasource : db_master
+[scau-mall-web] 22:32:16.602 [http-nio-8082-exec-9] DEBUG org.scau.mall.dao.PmsClientMapper.countByExample - ==>  Preparing: select count(*) from pms_client 
+[scau-mall-web] 22:32:16.603 [http-nio-8082-exec-9] DEBUG org.scau.mall.dao.PmsClientMapper.countByExample - ==> Parameters: 
+[scau-mall-web] 22:32:16.610 [http-nio-8082-exec-9] DEBUG org.scau.mall.dao.PmsClientMapper.countByExample - <==      Total: 1
+[scau-mall-web] 22:32:16.612 [http-nio-8082-exec-9] DEBUG org.scau.mall.config.datasource.DynamicDataSource - Use Default datasource : db_master
+[scau-mall-web] 22:32:16.613 [http-nio-8082-exec-9] DEBUG org.scau.mall.dao.PmsClientMapper.selectByExample - ==>  Preparing: select 'true' as QUERYID, id, name, id_number, telephone, address, status, created_at, updated_at from pms_client order by created_at desc limit 0,5 
+[scau-mall-web] 22:32:16.613 [http-nio-8082-exec-9] DEBUG org.scau.mall.dao.PmsClientMapper.selectByExample - ==> Parameters: 
+[scau-mall-web] 22:32:16.619 [http-nio-8082-exec-9] DEBUG org.scau.mall.dao.PmsClientMapper.selectByExample - <==      Total: 5
+[scau-mall-web] 22:32:18.429 [http-nio-8082-exec-2] DEBUG org.scau.mall.config.datasource.DynamicDataSource - Use Default datasource : db_master
+[scau-mall-web] 22:32:18.445 [http-nio-8082-exec-2] DEBUG org.scau.mall.dao.PmsClientMapper.countByExample - ==>  Preparing: select count(*) from pms_client 
+[scau-mall-web] 22:32:18.447 [http-nio-8082-exec-2] DEBUG org.scau.mall.dao.PmsClientMapper.countByExample - ==> Parameters: 
+[scau-mall-web] 22:32:18.451 [http-nio-8082-exec-2] DEBUG org.scau.mall.dao.PmsClientMapper.countByExample - <==      Total: 1
+[scau-mall-web] 22:32:18.451 [http-nio-8082-exec-2] DEBUG org.scau.mall.config.datasource.DynamicDataSource - Use Default datasource : db_master
+[scau-mall-web] 22:32:18.452 [http-nio-8082-exec-2] DEBUG org.scau.mall.dao.PmsClientMapper.selectByExample - ==>  Preparing: select 'true' as QUERYID, id, name, id_number, telephone, address, status, created_at, updated_at from pms_client order by created_at desc limit 0,5 
+[scau-mall-web] 22:32:18.453 [http-nio-8082-exec-2] DEBUG org.scau.mall.dao.PmsClientMapper.selectByExample - ==> Parameters: 
+[scau-mall-web] 22:32:18.465 [http-nio-8082-exec-2] DEBUG org.scau.mall.dao.PmsClientMapper.selectByExample - <==      Total: 5
+[scau-mall-web] 22:34:54.908 [http-nio-8082-exec-1] DEBUG org.scau.mall.config.datasource.DynamicDataSource - Use Default datasource : db_master
+[scau-mall-web] 22:34:54.909 [http-nio-8082-exec-1] DEBUG org.scau.mall.dao.PmsUserMapper.selectByExample - ==>  Preparing: select 'true' as QUERYID, id, username, password, email, mobile, status, created_at, updated_at from pms_user WHERE ( username = ? and status = ? ) 
+[scau-mall-web] 22:34:54.916 [http-nio-8082-exec-7] DEBUG org.scau.mall.config.datasource.DynamicDataSource - Use Default datasource : db_master
+[scau-mall-web] 22:34:54.917 [http-nio-8082-exec-7] DEBUG org.scau.mall.dao.PmsUserMapper.selectByExample - ==>  Preparing: select 'true' as QUERYID, id, username, password, email, mobile, status, created_at, updated_at from pms_user WHERE ( username = ? and status = ? ) 
+[scau-mall-web] 22:34:54.935 [http-nio-8082-exec-7] DEBUG org.scau.mall.dao.PmsUserMapper.selectByExample - ==> Parameters: admin(String), 1(Integer)
+[scau-mall-web] 22:34:54.935 [http-nio-8082-exec-1] DEBUG org.scau.mall.dao.PmsUserMapper.selectByExample - ==> Parameters: admin(String), 1(Integer)
+[scau-mall-web] 22:34:54.940 [http-nio-8082-exec-1] DEBUG org.scau.mall.dao.PmsUserMapper.selectByExample - <==      Total: 1
+[scau-mall-web] 22:34:54.941 [http-nio-8082-exec-7] DEBUG org.scau.mall.dao.PmsUserMapper.selectByExample - <==      Total: 1
+[scau-mall-web] 22:34:54.950 [http-nio-8082-exec-7] DEBUG org.scau.mall.config.datasource.DynamicDataSource - Use Default datasource : db_master
+[scau-mall-web] 22:34:54.950 [http-nio-8082-exec-1] DEBUG org.scau.mall.config.datasource.DynamicDataSource - Use Default datasource : db_master
+[scau-mall-web] 22:34:54.950 [http-nio-8082-exec-1] DEBUG org.scau.mall.dao.PmsClientMapper.countByExample - ==>  Preparing: select count(*) from pms_client 
+[scau-mall-web] 22:34:54.950 [http-nio-8082-exec-7] DEBUG org.scau.mall.dao.PmsMenuMapper.selectByExample - ==>  Preparing: select 'true' as QUERYID, id, auth_name, pid, is_leaf, path, status, created_at, updated_at from pms_menu WHERE ( status = ? ) 
+[scau-mall-web] 22:34:54.951 [http-nio-8082-exec-1] DEBUG org.scau.mall.dao.PmsClientMapper.countByExample - ==> Parameters: 
+[scau-mall-web] 22:34:54.951 [http-nio-8082-exec-7] DEBUG org.scau.mall.dao.PmsMenuMapper.selectByExample - ==> Parameters: 1(Integer)
+[scau-mall-web] 22:34:54.952 [http-nio-8082-exec-1] DEBUG org.scau.mall.dao.PmsClientMapper.countByExample - <==      Total: 1
+[scau-mall-web] 22:34:54.955 [http-nio-8082-exec-1] DEBUG org.scau.mall.config.datasource.DynamicDataSource - Use Default datasource : db_master
+[scau-mall-web] 22:34:54.955 [http-nio-8082-exec-7] DEBUG org.scau.mall.dao.PmsMenuMapper.selectByExample - <==      Total: 7
+[scau-mall-web] 22:34:54.955 [http-nio-8082-exec-1] DEBUG org.scau.mall.dao.PmsClientMapper.selectByExample - ==>  Preparing: select 'true' as QUERYID, id, name, id_number, telephone, address, status, created_at, updated_at from pms_client order by created_at desc limit 0,5 
+[scau-mall-web] 22:34:54.955 [http-nio-8082-exec-1] DEBUG org.scau.mall.dao.PmsClientMapper.selectByExample - ==> Parameters: 
+[scau-mall-web] 22:34:54.960 [http-nio-8082-exec-1] DEBUG org.scau.mall.dao.PmsClientMapper.selectByExample - <==      Total: 5
+[scau-mall-web] 23:40:08.165 [main] INFO  org.scau.mall.web.MallWebApplication - Starting MallWebApplication on DESKTOP-KEBSTMU with PID 29360 (D:\workspace-xrk\scau-mall\scau-mall\scau-mall-web\target\classes started by John in D:\workspace-xrk\scau-mall\scau-mall\scau-mall-web)
+[scau-mall-web] 23:40:08.242 [main] DEBUG org.scau.mall.web.MallWebApplication - Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+[scau-mall-web] 23:40:08.243 [main] INFO  org.scau.mall.web.MallWebApplication - No active profile set, falling back to default profiles: default
+[scau-mall-web] 23:40:08.388 [main] INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@635572a7: startup date [Mon Sep 26 23:40:08 CST 2022]; root of context hierarchy
+[scau-mall-web] 23:40:09.177 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+[scau-mall-web] 23:40:10.987 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[scau-mall-web] 23:40:12.345 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'druidDataSourceConfig' of type [org.scau.mall.config.datasource.DruidDataSourceConfig$$EnhancerBySpringCGLIB$$58d5f7dc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 23:40:12.348 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dynamicDataSourceConfig' of type [org.scau.mall.config.datasource.DynamicDataSourceConfig$$EnhancerBySpringCGLIB$$5a65979] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 23:40:13.635 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[scau-mall-web] 23:40:13.696 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dataSource' of type [org.scau.mall.config.datasource.DynamicDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 23:40:13.705 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'mybatisConfig' of type [org.scau.mall.config.MybatisConfig$$EnhancerBySpringCGLIB$$47e0ad0d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 23:40:14.481 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 23:40:14.516 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'pmsUserMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 23:40:14.522 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'pmsOrdersMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 23:40:14.525 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'pmsMenuMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 23:40:14.546 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'pmsClientMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 23:40:14.553 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'pmsClientLoanRecordMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 23:40:14.556 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'ordersMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 23:40:14.821 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [org.scau.mall.config.redis.RedisConfig$$EnhancerBySpringCGLIB$$4cd73162] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 23:40:15.489 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$7be48443] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 23:40:15.677 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$32d24e25] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 23:40:15.883 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$cb80165f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 23:40:15.917 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 23:40:15.925 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@3f63a513' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 23:40:15.949 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$f054b911] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 23:40:16.008 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 23:40:17.747 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8082 (http)
+[scau-mall-web] 23:40:17.799 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+[scau-mall-web] 23:40:17.848 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+[scau-mall-web] 23:40:17.848 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.29
+[scau-mall-web] 23:40:18.356 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[scau-mall-web] 23:40:18.356 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 9968 ms
+[scau-mall-web] 23:40:20.922 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[scau-mall-web] 23:40:20.971 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[scau-mall-web] 23:40:20.972 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[scau-mall-web] 23:40:20.972 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[scau-mall-web] 23:40:20.975 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+[scau-mall-web] 23:40:20.975 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'corsFilter' to: [/*]
+[scau-mall-web] 23:40:20.976 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'jwtAuthencationTokenFilter' to: [/*]
+[scau-mall-web] 23:40:20.977 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+[scau-mall-web] 23:40:21.069 [localhost-startStop-1] DEBUG org.scau.mall.web.security.filter.JwtAuthencationTokenFilter - Initializing filter 'jwtAuthencationTokenFilter'
+[scau-mall-web] 23:40:21.070 [localhost-startStop-1] DEBUG org.scau.mall.web.security.filter.JwtAuthencationTokenFilter - Filter 'jwtAuthencationTokenFilter' configured successfully
+[scau-mall-web] 23:40:22.510 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/register'], []
+[scau-mall-web] 23:40:22.511 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/login'], []
+[scau-mall-web] 23:40:22.512 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/login/**'], []
+[scau-mall-web] 23:40:22.512 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/test/**'], []
+[scau-mall-web] 23:40:22.512 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/logout'], []
+[scau-mall-web] 23:40:22.512 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/index_files/**'], []
+[scau-mall-web] 23:40:22.512 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/master_files/**'], []
+[scau-mall-web] 23:40:22.512 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/pageJs/**'], []
+[scau-mall-web] 23:40:22.512 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='bg_up.png'], []
+[scau-mall-web] 23:40:22.512 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='common.js'], []
+[scau-mall-web] 23:40:22.512 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/templates/**'], []
+[scau-mall-web] 23:40:22.512 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/index.html'], []
+[scau-mall-web] 23:40:22.512 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='favicon.ico'], []
+[scau-mall-web] 23:40:22.512 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/doc.html'], []
+[scau-mall-web] 23:40:22.512 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/webjars/**'], []
+[scau-mall-web] 23:40:22.512 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/swagger-resources/**'], []
+[scau-mall-web] 23:40:22.513 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/v2/api-docs/**'], []
+[scau-mall-web] 23:40:22.513 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/captcha'], []
+[scau-mall-web] 23:40:22.513 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/ws/**'], []
+[scau-mall-web] 23:40:22.513 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/api/v1/customer/add'], []
+[scau-mall-web] 23:40:22.985 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@33324c05, org.springframework.security.web.context.SecurityContextPersistenceFilter@2c48cede, org.springframework.security.web.header.HeaderWriterFilter@7a64cb0c, org.springframework.web.filter.CorsFilter@68c30142, org.springframework.security.web.authentication.logout.LogoutFilter@77083e41, org.scau.mall.web.security.filter.JwtAuthencationTokenFilter@6839814b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@39c87b42, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@78b03788, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@37d3e140, org.springframework.security.web.session.SessionManagementFilter@234cd86c, org.springframework.security.web.access.ExceptionTranslationFilter@2c06b113, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3b5a19ed]
+[scau-mall-web] 23:40:26.175 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@635572a7: startup date [Mon Sep 26 23:40:08 CST 2022]; root of context hierarchy
+[scau-mall-web] 23:40:26.545 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/register],methods=[POST]}" onto public org.scau.mall.vo.resp.CommonRespone<org.scau.mall.service.pojo.PmsUser> org.scau.mall.web.controller.AuthController.registerUser(java.util.Map<java.lang.String, java.lang.String>)
+[scau-mall-web] 23:40:26.547 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/get],methods=[GET]}" onto public java.lang.String org.scau.mall.web.controller.AuthController.aaa()
+[scau-mall-web] 23:40:26.548 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/login],methods=[POST]}" onto public org.scau.mall.vo.resp.CommonRespone<org.scau.mall.web.vo.UsersVo> org.scau.mall.web.controller.AuthController.login(org.scau.mall.web.security.pojo.LoginDto,javax.servlet.http.HttpServletRequest)
+[scau-mall-web] 23:40:26.549 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/clients],methods=[GET]}" onto public org.scau.mall.vo.resp.CommonRespone<org.scau.mall.web.vo.PageShowVo<org.scau.mall.web.vo.ClientsVo>> org.scau.mall.web.controller.client.ClientController.clients(org.scau.mall.web.vo.QueryVo,javax.servlet.http.HttpServletRequest)
+[scau-mall-web] 23:40:26.551 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/api/v1/customer/index],methods=[GET]}" onto public java.lang.String org.scau.mall.web.controller.CustomerController.index(javax.servlet.http.HttpServletRequest,org.scau.mall.vo.ClientLoadRecordVo)
+[scau-mall-web] 23:40:26.552 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/api/v1/customer/add]}" onto public org.scau.mall.vo.resp.ResponeData<java.lang.Object> org.scau.mall.web.controller.CustomerController.add(javax.servlet.http.HttpServletRequest,org.scau.mall.vo.ClientLoadRecordVo)
+[scau-mall-web] 23:40:26.552 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/api/v1/customer/list]}" onto public org.scau.mall.vo.resp.ResponeData<org.scau.mall.vo.PmsClientShowVo> org.scau.mall.web.controller.CustomerController.list(javax.servlet.http.HttpServletRequest,org.scau.mall.vo.PmsClientQueryVo)
+[scau-mall-web] 23:40:26.555 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/api/v1/customer/middle]}" onto public java.lang.String org.scau.mall.web.controller.CustomerController.middle(org.springframework.ui.ModelMap)
+[scau-mall-web] 23:40:26.557 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/api/v1/customer/encodeImg]}" onto public void org.scau.mall.web.controller.CustomerController.encodeImg(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+[scau-mall-web] 23:40:26.560 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/fdfs_upload],methods=[POST]}" onto public org.scau.mall.vo.resp.CommonRespone<java.lang.Object> org.scau.mall.web.controller.file.FileController.fileUpload(org.springframework.web.multipart.MultipartFile)
+[scau-mall-web] 23:40:26.562 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/test/index]}" onto public java.lang.String org.scau.mall.web.controller.IndexController.index(org.springframework.ui.ModelMap)
+[scau-mall-web] 23:40:26.563 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/test/middle]}" onto public java.lang.String org.scau.mall.web.controller.IndexController.middle(org.springframework.ui.ModelMap)
+[scau-mall-web] 23:40:26.566 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/test/encodeImg]}" onto public void org.scau.mall.web.controller.IndexController.encodeImg(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+[scau-mall-web] 23:40:26.569 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/login/index]}" onto public java.lang.String org.scau.mall.web.controller.LoginController.index(org.springframework.ui.ModelMap)
+[scau-mall-web] 23:40:26.570 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/login/submit]}" onto public java.lang.String org.scau.mall.web.controller.LoginController.submit(org.springframework.ui.ModelMap)
+[scau-mall-web] 23:40:26.571 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/menus],methods=[GET]}" onto public org.scau.mall.vo.resp.CommonRespone<java.util.List<org.scau.mall.web.vo.MenusVo>> org.scau.mall.web.controller.MenuController.menus(javax.servlet.http.HttpServletRequest)
+[scau-mall-web] 23:40:26.599 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/approveSubmit],methods=[POST]}" onto public org.scau.mall.vo.resp.CommonRespone<java.lang.Object> org.scau.mall.web.controller.order.OrderController.approveSubmit(org.scau.mall.web.vo.ApproveFormBody,javax.servlet.http.HttpServletRequest)
+[scau-mall-web] 23:40:26.600 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/verifyPass],methods=[POST]}" onto public org.scau.mall.vo.resp.CommonRespone<java.lang.Object> org.scau.mall.web.controller.order.OrderController.verifyPass(org.scau.mall.web.vo.AuditFormBody,javax.servlet.http.HttpServletRequest)
+[scau-mall-web] 23:40:26.600 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/orders],methods=[GET]}" onto public org.scau.mall.vo.resp.CommonRespone<org.scau.mall.web.vo.PageShowVo<org.scau.mall.web.vo.OrdersVo>> org.scau.mall.web.controller.order.OrderController.orders(org.scau.mall.web.vo.QueryVo,javax.servlet.http.HttpServletRequest)
+[scau-mall-web] 23:40:26.608 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/users],methods=[GET]}" onto public org.scau.mall.vo.resp.CommonRespone<org.scau.mall.web.vo.PageShowVo<org.scau.mall.web.vo.UsersVo>> org.scau.mall.web.controller.user.UserController.users(org.scau.mall.web.vo.QueryVo,javax.servlet.http.HttpServletRequest)
+[scau-mall-web] 23:40:26.609 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/users],methods=[POST]}" onto public org.scau.mall.vo.resp.CommonRespone<org.scau.mall.web.vo.UsersVo> org.scau.mall.web.controller.user.UserController.addUsers(org.scau.mall.service.pojo.PmsUser)
+[scau-mall-web] 23:40:26.611 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/users/{id}/state/{mg_state}],methods=[PUT]}" onto public org.scau.mall.vo.resp.CommonRespone<org.scau.mall.web.vo.UsersVo> org.scau.mall.web.controller.user.UserController.changeUserStatus(java.lang.Integer,boolean)
+[scau-mall-web] 23:40:26.612 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/users/{id}],methods=[GET]}" onto public org.scau.mall.vo.resp.CommonRespone<org.scau.mall.web.vo.UsersVo> org.scau.mall.web.controller.user.UserController.getUserById(java.lang.Integer)
+[scau-mall-web] 23:40:26.613 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/users/{id}],methods=[PUT]}" onto public org.scau.mall.vo.resp.CommonRespone<org.scau.mall.web.vo.UsersVo> org.scau.mall.web.controller.user.UserController.editUser(java.lang.Integer,java.util.Map<java.lang.String, java.lang.String>)
+[scau-mall-web] 23:40:26.613 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/users/{id}],methods=[DELETE]}" onto public org.scau.mall.vo.resp.CommonRespone<org.scau.mall.web.vo.UsersVo> org.scau.mall.web.controller.user.UserController.deleteUser(java.lang.Integer)
+[scau-mall-web] 23:40:26.619 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[scau-mall-web] 23:40:26.620 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[scau-mall-web] 23:40:28.055 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[scau-mall-web] 23:40:28.057 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[scau-mall-web] 23:40:28.430 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[scau-mall-web] 23:40:30.624 [main] INFO  org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+[scau-mall-web] 23:40:32.652 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[scau-mall-web] 23:40:32.704 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+[scau-mall-web] 23:40:32.743 [main] ERROR org.apache.catalina.core.StandardService - Failed to start connector [Connector[HTTP/1.1-8082]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8082]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:265)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:208)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at org.scau.mall.web.MallWebApplication.main(MallWebApplication.java:18)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1020)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1150)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018)
+	... 14 common frames omitted
+[scau-mall-web] 23:40:32.761 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8082"]
+[scau-mall-web] 23:40:32.762 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+[scau-mall-web] 23:40:32.814 [main] INFO  org.apache.catalina.util.LifecycleBase - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+[scau-mall-web] 23:40:32.815 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8082"]
+[scau-mall-web] 23:40:32.815 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8082"]
+[scau-mall-web] 23:40:32.828 [main] INFO  org.springframework.boot.autoconfigure.logging.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+[scau-mall-web] 23:40:32.843 [main] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8082 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8082, or configure this application to listen on another port.
+
+[scau-mall-web] 23:40:32.851 [main] INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@635572a7: startup date [Mon Sep 26 23:40:08 CST 2022]; root of context hierarchy
+[scau-mall-web] 23:40:32.858 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+[scau-mall-web] 23:41:09.621 [main] INFO  org.scau.mall.web.MallWebApplication - Starting MallWebApplication on DESKTOP-KEBSTMU with PID 20108 (D:\workspace-xrk\scau-mall\scau-mall\scau-mall-web\target\classes started by John in D:\workspace-xrk\scau-mall\scau-mall\scau-mall-web)
+[scau-mall-web] 23:41:09.647 [main] DEBUG org.scau.mall.web.MallWebApplication - Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+[scau-mall-web] 23:41:09.648 [main] INFO  org.scau.mall.web.MallWebApplication - No active profile set, falling back to default profiles: default
+[scau-mall-web] 23:41:09.843 [main] INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@635572a7: startup date [Mon Sep 26 23:41:09 CST 2022]; root of context hierarchy
+[scau-mall-web] 23:41:10.824 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+[scau-mall-web] 23:41:13.070 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[scau-mall-web] 23:41:15.197 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'druidDataSourceConfig' of type [org.scau.mall.config.datasource.DruidDataSourceConfig$$EnhancerBySpringCGLIB$$295d642b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 23:41:15.200 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dynamicDataSourceConfig' of type [org.scau.mall.config.datasource.DynamicDataSourceConfig$$EnhancerBySpringCGLIB$$d62dc5c8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 23:41:16.857 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[scau-mall-web] 23:41:16.903 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dataSource' of type [org.scau.mall.config.datasource.DynamicDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 23:41:16.907 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'mybatisConfig' of type [org.scau.mall.config.MybatisConfig$$EnhancerBySpringCGLIB$$1868195c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 23:41:18.008 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 23:41:18.026 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'pmsUserMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 23:41:18.033 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'pmsOrdersMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 23:41:18.037 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'pmsMenuMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 23:41:18.042 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'pmsClientMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 23:41:18.050 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'pmsClientLoanRecordMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 23:41:18.053 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'ordersMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 23:41:18.354 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [org.scau.mall.config.redis.RedisConfig$$EnhancerBySpringCGLIB$$1d5e9db1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 23:41:19.117 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$4c6bf092] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 23:41:19.346 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$359ba74] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 23:41:19.598 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$9c0782ae] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 23:41:19.649 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 23:41:19.657 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@1dad01fe' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 23:41:19.686 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$c0dc2560] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 23:41:19.764 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 23:41:22.095 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8082 (http)
+[scau-mall-web] 23:41:22.204 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+[scau-mall-web] 23:41:22.283 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+[scau-mall-web] 23:41:22.283 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.29
+[scau-mall-web] 23:41:22.816 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[scau-mall-web] 23:41:22.817 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 12975 ms
+[scau-mall-web] 23:41:26.470 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[scau-mall-web] 23:41:26.553 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[scau-mall-web] 23:41:26.555 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[scau-mall-web] 23:41:26.555 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[scau-mall-web] 23:41:26.560 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+[scau-mall-web] 23:41:26.560 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'corsFilter' to: [/*]
+[scau-mall-web] 23:41:26.561 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'jwtAuthencationTokenFilter' to: [/*]
+[scau-mall-web] 23:41:26.562 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+[scau-mall-web] 23:41:26.763 [localhost-startStop-1] DEBUG org.scau.mall.web.security.filter.JwtAuthencationTokenFilter - Initializing filter 'jwtAuthencationTokenFilter'
+[scau-mall-web] 23:41:26.764 [localhost-startStop-1] DEBUG org.scau.mall.web.security.filter.JwtAuthencationTokenFilter - Filter 'jwtAuthencationTokenFilter' configured successfully
+[scau-mall-web] 23:41:28.645 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/register'], []
+[scau-mall-web] 23:41:28.645 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/login'], []
+[scau-mall-web] 23:41:28.645 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/login/**'], []
+[scau-mall-web] 23:41:28.645 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/test/**'], []
+[scau-mall-web] 23:41:28.646 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/logout'], []
+[scau-mall-web] 23:41:28.646 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/index_files/**'], []
+[scau-mall-web] 23:41:28.646 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/master_files/**'], []
+[scau-mall-web] 23:41:28.646 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/pageJs/**'], []
+[scau-mall-web] 23:41:28.646 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='bg_up.png'], []
+[scau-mall-web] 23:41:28.646 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='common.js'], []
+[scau-mall-web] 23:41:28.646 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/templates/**'], []
+[scau-mall-web] 23:41:28.647 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/index.html'], []
+[scau-mall-web] 23:41:28.647 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='favicon.ico'], []
+[scau-mall-web] 23:41:28.647 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/doc.html'], []
+[scau-mall-web] 23:41:28.647 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/webjars/**'], []
+[scau-mall-web] 23:41:28.647 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/swagger-resources/**'], []
+[scau-mall-web] 23:41:28.647 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/v2/api-docs/**'], []
+[scau-mall-web] 23:41:28.647 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/captcha'], []
+[scau-mall-web] 23:41:28.647 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/ws/**'], []
+[scau-mall-web] 23:41:28.647 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/api/v1/customer/add'], []
+[scau-mall-web] 23:41:29.087 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@52f8a6f4, org.springframework.security.web.context.SecurityContextPersistenceFilter@2407a36c, org.springframework.security.web.header.HeaderWriterFilter@6c835217, org.springframework.web.filter.CorsFilter@77f0b2e6, org.springframework.security.web.authentication.logout.LogoutFilter@67f946c3, org.scau.mall.web.security.filter.JwtAuthencationTokenFilter@7188a232, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@28b8f98a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5a7b309b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5012c571, org.springframework.security.web.session.SessionManagementFilter@26da1ba2, org.springframework.security.web.access.ExceptionTranslationFilter@4f3356c0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5f8f1712]
+[scau-mall-web] 23:41:32.120 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@635572a7: startup date [Mon Sep 26 23:41:09 CST 2022]; root of context hierarchy
+[scau-mall-web] 23:41:32.536 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/get],methods=[GET]}" onto public java.lang.String org.scau.mall.web.controller.AuthController.aaa()
+[scau-mall-web] 23:41:32.540 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/login],methods=[POST]}" onto public org.scau.mall.vo.resp.CommonRespone<org.scau.mall.web.vo.UsersVo> org.scau.mall.web.controller.AuthController.login(org.scau.mall.web.security.pojo.LoginDto,javax.servlet.http.HttpServletRequest)
+[scau-mall-web] 23:41:32.542 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/register],methods=[POST]}" onto public org.scau.mall.vo.resp.CommonRespone<org.scau.mall.service.pojo.PmsUser> org.scau.mall.web.controller.AuthController.registerUser(java.util.Map<java.lang.String, java.lang.String>)
+[scau-mall-web] 23:41:32.543 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/clients],methods=[GET]}" onto public org.scau.mall.vo.resp.CommonRespone<org.scau.mall.web.vo.PageShowVo<org.scau.mall.web.vo.ClientsVo>> org.scau.mall.web.controller.client.ClientController.clients(org.scau.mall.web.vo.QueryVo,javax.servlet.http.HttpServletRequest)
+[scau-mall-web] 23:41:32.546 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/api/v1/customer/index],methods=[GET]}" onto public java.lang.String org.scau.mall.web.controller.CustomerController.index(javax.servlet.http.HttpServletRequest,org.scau.mall.vo.ClientLoadRecordVo)
+[scau-mall-web] 23:41:32.547 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/api/v1/customer/add]}" onto public org.scau.mall.vo.resp.ResponeData<java.lang.Object> org.scau.mall.web.controller.CustomerController.add(javax.servlet.http.HttpServletRequest,org.scau.mall.vo.ClientLoadRecordVo)
+[scau-mall-web] 23:41:32.548 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/api/v1/customer/list]}" onto public org.scau.mall.vo.resp.ResponeData<org.scau.mall.vo.PmsClientShowVo> org.scau.mall.web.controller.CustomerController.list(javax.servlet.http.HttpServletRequest,org.scau.mall.vo.PmsClientQueryVo)
+[scau-mall-web] 23:41:32.548 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/api/v1/customer/encodeImg]}" onto public void org.scau.mall.web.controller.CustomerController.encodeImg(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+[scau-mall-web] 23:41:32.548 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/api/v1/customer/middle]}" onto public java.lang.String org.scau.mall.web.controller.CustomerController.middle(org.springframework.ui.ModelMap)
+[scau-mall-web] 23:41:32.550 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/fdfs_upload],methods=[POST]}" onto public org.scau.mall.vo.resp.CommonRespone<java.lang.Object> org.scau.mall.web.controller.file.FileController.fileUpload(org.springframework.web.multipart.MultipartFile)
+[scau-mall-web] 23:41:32.551 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/test/index]}" onto public java.lang.String org.scau.mall.web.controller.IndexController.index(org.springframework.ui.ModelMap)
+[scau-mall-web] 23:41:32.552 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/test/encodeImg]}" onto public void org.scau.mall.web.controller.IndexController.encodeImg(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+[scau-mall-web] 23:41:32.553 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/test/middle]}" onto public java.lang.String org.scau.mall.web.controller.IndexController.middle(org.springframework.ui.ModelMap)
+[scau-mall-web] 23:41:32.557 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/login/index]}" onto public java.lang.String org.scau.mall.web.controller.LoginController.index(org.springframework.ui.ModelMap)
+[scau-mall-web] 23:41:32.558 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/login/submit]}" onto public java.lang.String org.scau.mall.web.controller.LoginController.submit(org.springframework.ui.ModelMap)
+[scau-mall-web] 23:41:32.560 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/menus],methods=[GET]}" onto public org.scau.mall.vo.resp.CommonRespone<java.util.List<org.scau.mall.web.vo.MenusVo>> org.scau.mall.web.controller.MenuController.menus(javax.servlet.http.HttpServletRequest)
+[scau-mall-web] 23:41:32.562 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/approveSubmit],methods=[POST]}" onto public org.scau.mall.vo.resp.CommonRespone<java.lang.Object> org.scau.mall.web.controller.order.OrderController.approveSubmit(org.scau.mall.web.vo.ApproveFormBody,javax.servlet.http.HttpServletRequest)
+[scau-mall-web] 23:41:32.563 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/orders],methods=[GET]}" onto public org.scau.mall.vo.resp.CommonRespone<org.scau.mall.web.vo.PageShowVo<org.scau.mall.web.vo.OrdersVo>> org.scau.mall.web.controller.order.OrderController.orders(org.scau.mall.web.vo.QueryVo,javax.servlet.http.HttpServletRequest)
+[scau-mall-web] 23:41:32.564 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/verifyPass],methods=[POST]}" onto public org.scau.mall.vo.resp.CommonRespone<java.lang.Object> org.scau.mall.web.controller.order.OrderController.verifyPass(org.scau.mall.web.vo.AuditFormBody,javax.servlet.http.HttpServletRequest)
+[scau-mall-web] 23:41:32.574 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/users/{id}/state/{mg_state}],methods=[PUT]}" onto public org.scau.mall.vo.resp.CommonRespone<org.scau.mall.web.vo.UsersVo> org.scau.mall.web.controller.user.UserController.changeUserStatus(java.lang.Integer,boolean)
+[scau-mall-web] 23:41:32.576 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/users/{id}],methods=[DELETE]}" onto public org.scau.mall.vo.resp.CommonRespone<org.scau.mall.web.vo.UsersVo> org.scau.mall.web.controller.user.UserController.deleteUser(java.lang.Integer)
+[scau-mall-web] 23:41:32.577 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/users/{id}],methods=[GET]}" onto public org.scau.mall.vo.resp.CommonRespone<org.scau.mall.web.vo.UsersVo> org.scau.mall.web.controller.user.UserController.getUserById(java.lang.Integer)
+[scau-mall-web] 23:41:32.577 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/users/{id}],methods=[PUT]}" onto public org.scau.mall.vo.resp.CommonRespone<org.scau.mall.web.vo.UsersVo> org.scau.mall.web.controller.user.UserController.editUser(java.lang.Integer,java.util.Map<java.lang.String, java.lang.String>)
+[scau-mall-web] 23:41:32.578 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/users],methods=[GET]}" onto public org.scau.mall.vo.resp.CommonRespone<org.scau.mall.web.vo.PageShowVo<org.scau.mall.web.vo.UsersVo>> org.scau.mall.web.controller.user.UserController.users(org.scau.mall.web.vo.QueryVo,javax.servlet.http.HttpServletRequest)
+[scau-mall-web] 23:41:32.579 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/users],methods=[POST]}" onto public org.scau.mall.vo.resp.CommonRespone<org.scau.mall.web.vo.UsersVo> org.scau.mall.web.controller.user.UserController.addUsers(org.scau.mall.service.pojo.PmsUser)
+[scau-mall-web] 23:41:32.583 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[scau-mall-web] 23:41:32.585 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[scau-mall-web] 23:41:32.998 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[scau-mall-web] 23:41:32.998 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[scau-mall-web] 23:41:33.430 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[scau-mall-web] 23:41:35.278 [main] INFO  org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+[scau-mall-web] 23:41:37.087 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[scau-mall-web] 23:41:37.122 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+[scau-mall-web] 23:41:37.172 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+[scau-mall-web] 23:41:37.243 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8082 (http)
+[scau-mall-web] 23:41:37.258 [main] INFO  org.scau.mall.web.MallWebApplication - Started MallWebApplication in 30.126 seconds (JVM running for 35.376)

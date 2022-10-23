@@ -1,0 +1,160 @@
+[scau-mall-web] 23:01:44.415 [main] INFO  org.scau.mall.web.App - Starting App on DESKTOP-KEBSTMU with PID 20140 (D:\workspace-xrk\scau-mall\scau-mall\scau-mall-web\target\classes started by John in D:\workspace-xrk\scau-mall\scau-mall\scau-mall-web)
+[scau-mall-web] 23:01:44.454 [main] DEBUG org.scau.mall.web.App - Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+[scau-mall-web] 23:01:44.454 [main] INFO  org.scau.mall.web.App - No active profile set, falling back to default profiles: default
+[scau-mall-web] 23:01:44.560 [main] INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e636ea3: startup date [Tue Aug 03 23:01:44 CST 2021]; root of context hierarchy
+[scau-mall-web] 23:01:45.122 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+[scau-mall-web] 23:01:46.256 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[scau-mall-web] 23:01:48.065 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8081 (http)
+[scau-mall-web] 23:01:48.100 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+[scau-mall-web] 23:01:48.123 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+[scau-mall-web] 23:01:48.124 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.29
+[scau-mall-web] 23:01:48.348 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[scau-mall-web] 23:01:48.348 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3788 ms
+[scau-mall-web] 23:01:48.612 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+[scau-mall-web] 23:01:48.620 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[scau-mall-web] 23:01:48.620 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[scau-mall-web] 23:01:48.621 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[scau-mall-web] 23:01:48.621 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[scau-mall-web] 23:01:49.218 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e636ea3: startup date [Tue Aug 03 23:01:44 CST 2021]; root of context hierarchy
+[scau-mall-web] 23:01:49.309 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/test/index]}" onto public java.lang.String org.scau.mall.web.controller.IndexController.index(org.springframework.ui.ModelMap)
+[scau-mall-web] 23:01:49.310 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/test/encodeImg]}" onto public void org.scau.mall.web.controller.IndexController.encodeImg(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+[scau-mall-web] 23:01:49.311 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/test/middle]}" onto public java.lang.String org.scau.mall.web.controller.IndexController.middle(org.springframework.ui.ModelMap)
+[scau-mall-web] 23:01:49.312 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/login/index]}" onto public java.lang.String org.scau.mall.web.controller.LoginController.index(org.springframework.ui.ModelMap)
+[scau-mall-web] 23:01:49.312 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/login/submit]}" onto public java.lang.String org.scau.mall.web.controller.LoginController.submit(org.springframework.ui.ModelMap)
+[scau-mall-web] 23:01:49.313 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[scau-mall-web] 23:01:49.314 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[scau-mall-web] 23:01:49.353 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[scau-mall-web] 23:01:49.353 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[scau-mall-web] 23:01:49.418 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[scau-mall-web] 23:01:49.965 [main] INFO  org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+[scau-mall-web] 23:01:50.358 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[scau-mall-web] 23:01:50.375 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+[scau-mall-web] 23:01:50.412 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+[scau-mall-web] 23:01:50.460 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8081 (http)
+[scau-mall-web] 23:01:50.469 [main] INFO  org.scau.mall.web.App - Started App in 7.019 seconds (JVM running for 9.417)
+[scau-mall-web] 23:03:10.787 [http-nio-8081-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[scau-mall-web] 23:03:10.787 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[scau-mall-web] 23:03:10.876 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 88 ms
+[scau-mall-web] 22:41:47.743 [main] INFO  org.scau.mall.web.App - Starting App on DESKTOP-KEBSTMU with PID 24720 (D:\workspace-xrk\scau-mall\scau-mall\scau-mall-web\target\classes started by John in D:\workspace-xrk\scau-mall\scau-mall\scau-mall-web)
+[scau-mall-web] 22:41:47.805 [main] DEBUG org.scau.mall.web.App - Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+[scau-mall-web] 22:41:47.806 [main] INFO  org.scau.mall.web.App - No active profile set, falling back to default profiles: default
+[scau-mall-web] 22:41:47.940 [main] INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e636ea3: startup date [Wed Aug 04 22:41:47 CST 2021]; root of context hierarchy
+[scau-mall-web] 22:41:48.458 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+[scau-mall-web] 22:41:49.202 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[scau-mall-web] 22:41:50.645 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8081 (http)
+[scau-mall-web] 22:41:50.678 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+[scau-mall-web] 22:41:50.699 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+[scau-mall-web] 22:41:50.700 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.29
+[scau-mall-web] 22:41:50.944 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[scau-mall-web] 22:41:50.944 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3004 ms
+[scau-mall-web] 22:41:51.230 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+[scau-mall-web] 22:41:51.238 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[scau-mall-web] 22:41:51.240 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[scau-mall-web] 22:41:51.240 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[scau-mall-web] 22:41:51.240 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[scau-mall-web] 22:41:51.907 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e636ea3: startup date [Wed Aug 04 22:41:47 CST 2021]; root of context hierarchy
+[scau-mall-web] 22:41:52.092 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/test/index]}" onto public java.lang.String org.scau.mall.web.controller.IndexController.index(org.springframework.ui.ModelMap)
+[scau-mall-web] 22:41:52.093 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/test/encodeImg]}" onto public void org.scau.mall.web.controller.IndexController.encodeImg(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+[scau-mall-web] 22:41:52.094 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/test/middle]}" onto public java.lang.String org.scau.mall.web.controller.IndexController.middle(org.springframework.ui.ModelMap)
+[scau-mall-web] 22:41:52.095 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/login/index]}" onto public java.lang.String org.scau.mall.web.controller.LoginController.index(org.springframework.ui.ModelMap)
+[scau-mall-web] 22:41:52.095 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/login/submit]}" onto public java.lang.String org.scau.mall.web.controller.LoginController.submit(org.springframework.ui.ModelMap)
+[scau-mall-web] 22:41:52.098 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[scau-mall-web] 22:41:52.100 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[scau-mall-web] 22:41:52.150 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[scau-mall-web] 22:41:52.150 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[scau-mall-web] 22:41:52.226 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[scau-mall-web] 22:41:53.319 [main] INFO  org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+[scau-mall-web] 22:41:53.737 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[scau-mall-web] 22:41:53.751 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+[scau-mall-web] 22:41:53.770 [main] ERROR org.apache.catalina.core.StandardService - Failed to start connector [Connector[HTTP/1.1-8081]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8081]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:265)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:208)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at org.scau.mall.web.App.main(App.java:18)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1020)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1150)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018)
+	... 14 common frames omitted
+[scau-mall-web] 22:41:53.778 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8081"]
+[scau-mall-web] 22:41:53.779 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+[scau-mall-web] 22:41:53.838 [main] INFO  org.apache.catalina.util.LifecycleBase - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+[scau-mall-web] 22:41:53.839 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8081"]
+[scau-mall-web] 22:41:53.839 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8081"]
+[scau-mall-web] 22:41:53.849 [main] INFO  org.springframework.boot.autoconfigure.logging.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+[scau-mall-web] 22:41:53.860 [main] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8081 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8081, or configure this application to listen on another port.
+
+[scau-mall-web] 22:41:53.864 [main] INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e636ea3: startup date [Wed Aug 04 22:41:47 CST 2021]; root of context hierarchy
+[scau-mall-web] 22:41:53.871 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+[scau-mall-web] 22:43:29.948 [main] INFO  org.scau.mall.web.App - Starting App on DESKTOP-KEBSTMU with PID 28080 (D:\workspace-xrk\scau-mall\scau-mall\scau-mall-web\target\classes started by John in D:\workspace-xrk\scau-mall\scau-mall\scau-mall-web)
+[scau-mall-web] 22:43:29.961 [main] DEBUG org.scau.mall.web.App - Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+[scau-mall-web] 22:43:29.961 [main] INFO  org.scau.mall.web.App - No active profile set, falling back to default profiles: default
+[scau-mall-web] 22:43:30.030 [main] INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e636ea3: startup date [Wed Aug 04 22:43:30 CST 2021]; root of context hierarchy
+[scau-mall-web] 22:43:30.342 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+[scau-mall-web] 22:43:30.849 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[scau-mall-web] 22:43:32.348 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8081 (http)
+[scau-mall-web] 22:43:32.383 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+[scau-mall-web] 22:43:32.408 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+[scau-mall-web] 22:43:32.408 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.29
+[scau-mall-web] 22:43:32.673 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[scau-mall-web] 22:43:32.673 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2643 ms
+[scau-mall-web] 22:43:32.955 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+[scau-mall-web] 22:43:32.961 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[scau-mall-web] 22:43:32.962 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[scau-mall-web] 22:43:32.962 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[scau-mall-web] 22:43:32.962 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[scau-mall-web] 22:43:33.526 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e636ea3: startup date [Wed Aug 04 22:43:30 CST 2021]; root of context hierarchy
+[scau-mall-web] 22:43:33.614 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/test/index]}" onto public java.lang.String org.scau.mall.web.controller.IndexController.index(org.springframework.ui.ModelMap)
+[scau-mall-web] 22:43:33.615 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/test/encodeImg]}" onto public void org.scau.mall.web.controller.IndexController.encodeImg(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+[scau-mall-web] 22:43:33.615 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/test/middle]}" onto public java.lang.String org.scau.mall.web.controller.IndexController.middle(org.springframework.ui.ModelMap)
+[scau-mall-web] 22:43:33.616 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/login/index]}" onto public java.lang.String org.scau.mall.web.controller.LoginController.index(org.springframework.ui.ModelMap)
+[scau-mall-web] 22:43:33.616 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/login/submit]}" onto public java.lang.String org.scau.mall.web.controller.LoginController.submit(org.springframework.ui.ModelMap)
+[scau-mall-web] 22:43:33.618 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[scau-mall-web] 22:43:33.618 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[scau-mall-web] 22:43:33.658 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[scau-mall-web] 22:43:33.658 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[scau-mall-web] 22:43:33.717 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[scau-mall-web] 22:43:34.249 [main] INFO  org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+[scau-mall-web] 22:43:34.577 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[scau-mall-web] 22:43:34.591 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+[scau-mall-web] 22:43:34.617 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+[scau-mall-web] 22:43:34.655 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8081 (http)
+[scau-mall-web] 22:43:34.662 [main] INFO  org.scau.mall.web.App - Started App in 5.387 seconds (JVM running for 6.636)
+[scau-mall-web] 22:43:57.346 [http-nio-8081-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[scau-mall-web] 22:43:57.346 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[scau-mall-web] 22:43:57.377 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 31 ms

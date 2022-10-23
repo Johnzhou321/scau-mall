@@ -75,5 +75,7 @@
 	<modules>
 		<module>scau-mall-service</module>
 		<module>scau-mall-web</module>
+		<module>scau-rabbit-producer</module>
+		<module>scau-rabbit-consumer</module>
 	</modules>
 </project>

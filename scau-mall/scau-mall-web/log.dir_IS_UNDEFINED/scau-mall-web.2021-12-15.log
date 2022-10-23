@@ -1,0 +1,296 @@
+[scau-mall-web] 22:21:44.847 [main] INFO  org.scau.mall.web.App - Starting App on DESKTOP-KEBSTMU with PID 48704 (D:\workspace-xrk\scau-mall\scau-mall\scau-mall-web\target\classes started by John in D:\workspace-xrk\scau-mall\scau-mall\scau-mall-web)
+[scau-mall-web] 22:21:44.873 [main] DEBUG org.scau.mall.web.App - Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+[scau-mall-web] 22:21:44.873 [main] INFO  org.scau.mall.web.App - No active profile set, falling back to default profiles: default
+[scau-mall-web] 22:21:45.039 [main] INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e636ea3: startup date [Wed Dec 15 22:21:45 CST 2021]; root of context hierarchy
+[scau-mall-web] 22:21:46.719 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+[scau-mall-web] 22:21:48.276 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[scau-mall-web] 22:21:52.022 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8081 (http)
+[scau-mall-web] 22:21:52.096 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+[scau-mall-web] 22:21:52.140 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+[scau-mall-web] 22:21:52.146 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.29
+[scau-mall-web] 22:21:52.657 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[scau-mall-web] 22:21:52.658 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 7619 ms
+[scau-mall-web] 22:21:53.344 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+[scau-mall-web] 22:21:53.356 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[scau-mall-web] 22:21:53.357 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[scau-mall-web] 22:21:53.357 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[scau-mall-web] 22:21:53.357 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[scau-mall-web] 22:21:53.596 [main] WARN  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customerController': Unsatisfied dependency expressed through field 'clientLoadRecordService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'clientLoanRecordService': Unsatisfied dependency expressed through field 'pmsClientDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.scau.mall.service.dao.PmsClientDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+[scau-mall-web] 22:21:53.600 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+[scau-mall-web] 22:21:53.712 [main] INFO  org.springframework.boot.autoconfigure.logging.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+[scau-mall-web] 22:21:54.207 [main] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field pmsClientDao in org.scau.mall.web.service.ClientLoanRecordService required a bean of type 'org.scau.mall.service.dao.PmsClientDao' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.scau.mall.service.dao.PmsClientDao' in your configuration.
+
+[scau-mall-web] 22:26:52.249 [main] INFO  org.scau.mall.web.App - Starting App on DESKTOP-KEBSTMU with PID 8116 (D:\workspace-xrk\scau-mall\scau-mall\scau-mall-web\target\classes started by John in D:\workspace-xrk\scau-mall\scau-mall\scau-mall-web)
+[scau-mall-web] 22:26:52.299 [main] DEBUG org.scau.mall.web.App - Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+[scau-mall-web] 22:26:52.300 [main] INFO  org.scau.mall.web.App - No active profile set, falling back to default profiles: default
+[scau-mall-web] 22:26:52.448 [main] INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e636ea3: startup date [Wed Dec 15 22:26:52 CST 2021]; root of context hierarchy
+[scau-mall-web] 22:26:53.211 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+[scau-mall-web] 22:26:54.419 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[scau-mall-web] 22:26:57.536 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8081 (http)
+[scau-mall-web] 22:26:57.584 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+[scau-mall-web] 22:26:57.699 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+[scau-mall-web] 22:26:57.700 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.29
+[scau-mall-web] 22:26:58.133 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[scau-mall-web] 22:26:58.133 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 5685 ms
+[scau-mall-web] 22:26:58.880 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+[scau-mall-web] 22:26:58.899 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[scau-mall-web] 22:26:58.906 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[scau-mall-web] 22:26:58.906 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[scau-mall-web] 22:26:58.907 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[scau-mall-web] 22:26:59.106 [main] WARN  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customerController': Unsatisfied dependency expressed through field 'clientLoadRecordService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'clientLoanRecordService': Unsatisfied dependency expressed through field 'pmsClientDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.scau.mall.service.dao.PmsClientDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+[scau-mall-web] 22:26:59.114 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+[scau-mall-web] 22:26:59.241 [main] INFO  org.springframework.boot.autoconfigure.logging.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+[scau-mall-web] 22:26:59.690 [main] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field pmsClientDao in org.scau.mall.web.service.ClientLoanRecordService required a bean of type 'org.scau.mall.service.dao.PmsClientDao' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.scau.mall.service.dao.PmsClientDao' in your configuration.
+
+[scau-mall-web] 22:27:47.415 [main] INFO  org.scau.mall.web.App - Starting App on DESKTOP-KEBSTMU with PID 42540 (D:\workspace-xrk\scau-mall\scau-mall\scau-mall-web\target\classes started by John in D:\workspace-xrk\scau-mall\scau-mall\scau-mall-web)
+[scau-mall-web] 22:27:47.438 [main] DEBUG org.scau.mall.web.App - Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+[scau-mall-web] 22:27:47.439 [main] INFO  org.scau.mall.web.App - No active profile set, falling back to default profiles: default
+[scau-mall-web] 22:27:47.595 [main] INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e636ea3: startup date [Wed Dec 15 22:27:47 CST 2021]; root of context hierarchy
+[scau-mall-web] 22:27:48.374 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+[scau-mall-web] 22:27:50.045 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[scau-mall-web] 22:27:54.160 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8081 (http)
+[scau-mall-web] 22:27:54.222 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+[scau-mall-web] 22:27:54.285 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+[scau-mall-web] 22:27:54.286 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.29
+[scau-mall-web] 22:27:54.805 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[scau-mall-web] 22:27:54.806 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 7211 ms
+[scau-mall-web] 22:27:55.735 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+[scau-mall-web] 22:27:55.750 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[scau-mall-web] 22:27:55.751 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[scau-mall-web] 22:27:55.752 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[scau-mall-web] 22:27:55.752 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[scau-mall-web] 22:27:56.000 [main] WARN  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customerController': Unsatisfied dependency expressed through field 'clientLoadRecordService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'clientLoanRecordService': Unsatisfied dependency expressed through field 'pmsClientDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.scau.mall.service.dao.PmsClientDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+[scau-mall-web] 22:27:56.009 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+[scau-mall-web] 22:27:56.112 [main] INFO  org.springframework.boot.autoconfigure.logging.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+[scau-mall-web] 22:27:56.648 [main] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field pmsClientDao in org.scau.mall.web.service.ClientLoanRecordService required a bean of type 'org.scau.mall.service.dao.PmsClientDao' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.scau.mall.service.dao.PmsClientDao' in your configuration.
+
+[scau-mall-web] 22:28:41.388 [main] INFO  org.scau.mall.web.App - Starting App on DESKTOP-KEBSTMU with PID 51280 (D:\workspace-xrk\scau-mall\scau-mall\scau-mall-web\target\classes started by John in D:\workspace-xrk\scau-mall\scau-mall\scau-mall-web)
+[scau-mall-web] 22:28:41.415 [main] DEBUG org.scau.mall.web.App - Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+[scau-mall-web] 22:28:41.416 [main] INFO  org.scau.mall.web.App - No active profile set, falling back to default profiles: default
+[scau-mall-web] 22:28:41.579 [main] INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e636ea3: startup date [Wed Dec 15 22:28:41 CST 2021]; root of context hierarchy
+[scau-mall-web] 22:28:42.323 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+[scau-mall-web] 22:28:43.622 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[scau-mall-web] 22:28:46.751 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8081 (http)
+[scau-mall-web] 22:28:46.835 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+[scau-mall-web] 22:28:46.889 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+[scau-mall-web] 22:28:46.890 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.29
+[scau-mall-web] 22:28:47.425 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[scau-mall-web] 22:28:47.426 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 5847 ms
+[scau-mall-web] 22:28:48.144 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+[scau-mall-web] 22:28:48.160 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[scau-mall-web] 22:28:48.161 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[scau-mall-web] 22:28:48.161 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[scau-mall-web] 22:28:48.162 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[scau-mall-web] 22:28:48.368 [main] WARN  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customerController': Unsatisfied dependency expressed through field 'clientLoadRecordService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'clientLoanRecordService': Unsatisfied dependency expressed through field 'pmsClientDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.scau.mall.service.dao.PmsClientDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+[scau-mall-web] 22:28:48.375 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+[scau-mall-web] 22:28:48.547 [main] INFO  org.springframework.boot.autoconfigure.logging.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+[scau-mall-web] 22:28:49.009 [main] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field pmsClientDao in org.scau.mall.web.service.ClientLoanRecordService required a bean of type 'org.scau.mall.service.dao.PmsClientDao' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.scau.mall.service.dao.PmsClientDao' in your configuration.
+
+[scau-mall-web] 22:29:31.747 [main] INFO  org.scau.mall.web.App - Starting App on DESKTOP-KEBSTMU with PID 48692 (D:\workspace-xrk\scau-mall\scau-mall\scau-mall-web\target\classes started by John in D:\workspace-xrk\scau-mall\scau-mall\scau-mall-web)
+[scau-mall-web] 22:29:31.823 [main] DEBUG org.scau.mall.web.App - Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+[scau-mall-web] 22:29:31.823 [main] INFO  org.scau.mall.web.App - No active profile set, falling back to default profiles: default
+[scau-mall-web] 22:29:32.002 [main] INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e636ea3: startup date [Wed Dec 15 22:29:32 CST 2021]; root of context hierarchy
+[scau-mall-web] 22:29:32.783 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+[scau-mall-web] 22:29:34.075 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[scau-mall-web] 22:29:37.219 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8081 (http)
+[scau-mall-web] 22:29:37.303 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+[scau-mall-web] 22:29:37.352 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+[scau-mall-web] 22:29:37.354 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.29
+[scau-mall-web] 22:29:37.836 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[scau-mall-web] 22:29:37.837 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 5835 ms
+[scau-mall-web] 22:29:38.463 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+[scau-mall-web] 22:29:38.478 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[scau-mall-web] 22:29:38.481 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[scau-mall-web] 22:29:38.481 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[scau-mall-web] 22:29:38.481 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[scau-mall-web] 22:29:38.664 [main] WARN  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customerController': Unsatisfied dependency expressed through field 'clientLoadRecordService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'clientLoanRecordService': Unsatisfied dependency expressed through field 'pmsClientDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.scau.mall.service.dao.PmsClientDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+[scau-mall-web] 22:29:38.672 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+[scau-mall-web] 22:29:38.822 [main] INFO  org.springframework.boot.autoconfigure.logging.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+[scau-mall-web] 22:29:39.213 [main] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field pmsClientDao in org.scau.mall.web.service.ClientLoanRecordService required a bean of type 'org.scau.mall.service.dao.PmsClientDao' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.scau.mall.service.dao.PmsClientDao' in your configuration.
+
+[scau-mall-web] 22:31:58.633 [main] INFO  org.scau.mall.web.App - Starting App on DESKTOP-KEBSTMU with PID 5768 (D:\workspace-xrk\scau-mall\scau-mall\scau-mall-web\target\classes started by John in D:\workspace-xrk\scau-mall\scau-mall\scau-mall-web)
+[scau-mall-web] 22:31:58.651 [main] DEBUG org.scau.mall.web.App - Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+[scau-mall-web] 22:31:58.652 [main] INFO  org.scau.mall.web.App - No active profile set, falling back to default profiles: default
+[scau-mall-web] 22:31:58.813 [main] INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e636ea3: startup date [Wed Dec 15 22:31:58 CST 2021]; root of context hierarchy
+[scau-mall-web] 22:31:59.560 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+[scau-mall-web] 22:32:00.884 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[scau-mall-web] 22:32:04.646 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8081 (http)
+[scau-mall-web] 22:32:04.729 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+[scau-mall-web] 22:32:04.789 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+[scau-mall-web] 22:32:04.789 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.29
+[scau-mall-web] 22:32:05.238 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[scau-mall-web] 22:32:05.238 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 6425 ms
+[scau-mall-web] 22:32:06.112 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+[scau-mall-web] 22:32:06.122 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[scau-mall-web] 22:32:06.124 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[scau-mall-web] 22:32:06.124 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[scau-mall-web] 22:32:06.125 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[scau-mall-web] 22:32:06.290 [main] WARN  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customerController': Unsatisfied dependency expressed through field 'clientLoadRecordService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'clientLoanRecordService': Unsatisfied dependency expressed through field 'pmsClientDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.scau.mall.service.dao.PmsClientDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+[scau-mall-web] 22:32:06.297 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+[scau-mall-web] 22:32:06.394 [main] INFO  org.springframework.boot.autoconfigure.logging.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+[scau-mall-web] 22:32:06.781 [main] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field pmsClientDao in org.scau.mall.web.service.ClientLoanRecordService required a bean of type 'org.scau.mall.service.dao.PmsClientDao' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.scau.mall.service.dao.PmsClientDao' in your configuration.
+
+[scau-mall-web] 22:34:45.046 [main] INFO  org.scau.mall.web.App - Starting App on DESKTOP-KEBSTMU with PID 37368 (D:\workspace-xrk\scau-mall\scau-mall\scau-mall-web\target\classes started by John in D:\workspace-xrk\scau-mall\scau-mall\scau-mall-web)
+[scau-mall-web] 22:34:45.074 [main] DEBUG org.scau.mall.web.App - Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+[scau-mall-web] 22:34:45.075 [main] INFO  org.scau.mall.web.App - No active profile set, falling back to default profiles: default
+[scau-mall-web] 22:34:45.243 [main] INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3da05287: startup date [Wed Dec 15 22:34:45 CST 2021]; root of context hierarchy
+[scau-mall-web] 22:34:46.558 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+[scau-mall-web] 22:34:47.631 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[scau-mall-web] 22:34:50.814 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8081 (http)
+[scau-mall-web] 22:34:50.904 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+[scau-mall-web] 22:34:50.935 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+[scau-mall-web] 22:34:50.935 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.29
+[scau-mall-web] 22:34:51.383 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[scau-mall-web] 22:34:51.383 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 6141 ms
+[scau-mall-web] 22:34:52.037 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+[scau-mall-web] 22:34:52.051 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[scau-mall-web] 22:34:52.052 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[scau-mall-web] 22:34:52.053 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[scau-mall-web] 22:34:52.053 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[scau-mall-web] 22:34:52.234 [main] WARN  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customerController': Unsatisfied dependency expressed through field 'clientLoadRecordService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'clientLoanRecordService': Unsatisfied dependency expressed through field 'pmsClientDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.scau.mall.service.dao.PmsClientDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+[scau-mall-web] 22:34:52.240 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+[scau-mall-web] 22:34:52.384 [main] INFO  org.springframework.boot.autoconfigure.logging.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+[scau-mall-web] 22:34:52.858 [main] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field pmsClientDao in org.scau.mall.web.service.ClientLoanRecordService required a bean of type 'org.scau.mall.service.dao.PmsClientDao' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.scau.mall.service.dao.PmsClientDao' in your configuration.
+
+[scau-mall-web] 22:35:22.860 [main] INFO  org.scau.mall.web.App - Starting App on DESKTOP-KEBSTMU with PID 11308 (D:\workspace-xrk\scau-mall\scau-mall\scau-mall-web\target\classes started by John in D:\workspace-xrk\scau-mall\scau-mall\scau-mall-web)
+[scau-mall-web] 22:35:22.897 [main] DEBUG org.scau.mall.web.App - Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+[scau-mall-web] 22:35:22.898 [main] INFO  org.scau.mall.web.App - No active profile set, falling back to default profiles: default
+[scau-mall-web] 22:35:23.046 [main] INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3da05287: startup date [Wed Dec 15 22:35:23 CST 2021]; root of context hierarchy
+[scau-mall-web] 22:35:23.732 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+[scau-mall-web] 22:35:25.002 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[scau-mall-web] 22:35:28.195 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8081 (http)
+[scau-mall-web] 22:35:28.248 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+[scau-mall-web] 22:35:28.285 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+[scau-mall-web] 22:35:28.286 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.29
+[scau-mall-web] 22:35:28.781 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[scau-mall-web] 22:35:28.782 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 5736 ms
+[scau-mall-web] 22:35:29.537 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+[scau-mall-web] 22:35:29.546 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[scau-mall-web] 22:35:29.547 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[scau-mall-web] 22:35:29.547 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[scau-mall-web] 22:35:29.547 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[scau-mall-web] 22:35:29.733 [main] WARN  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customerController': Unsatisfied dependency expressed through field 'clientLoadRecordService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'clientLoanRecordService': Unsatisfied dependency expressed through field 'pmsClientDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.scau.mall.service.dao.PmsClientDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+[scau-mall-web] 22:35:29.741 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+[scau-mall-web] 22:35:29.864 [main] INFO  org.springframework.boot.autoconfigure.logging.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+[scau-mall-web] 22:35:30.247 [main] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field pmsClientDao in org.scau.mall.web.service.ClientLoanRecordService required a bean of type 'org.scau.mall.service.dao.PmsClientDao' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.scau.mall.service.dao.PmsClientDao' in your configuration.
+

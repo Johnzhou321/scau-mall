@@ -7,9 +7,7 @@
     <artifactId>scau-mall</artifactId>
     <version>${scau.mall.version}</version>
   </parent>
-  <groupId>com.scau</groupId>
   <artifactId>scau-mall-web</artifactId>
-  <version>${scau.mall.version}</version>
   <name>scau-mall-web</name>
   <url>http://maven.apache.org</url>
   <!-- Maven building infomation -->
@@ -65,11 +63,60 @@
 		</plugins>
 	</build>
   <dependencies>
+	<dependency>
+		<groupId>com.scau</groupId>
+		<artifactId>scau-mall-service</artifactId>
+		<version>${scau.mall.version}</version>
+	</dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <scope>test</scope>
     </dependency>
+    <!--freemarker-->
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-freemarker</artifactId>
+    </dependency>
+    <dependency>
+        <groupId>io.jsonwebtoken</groupId>
+        <artifactId>jjwt</artifactId>
+        <version>0.9.1</version>
+    </dependency>
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-security</artifactId>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.springframework.security.oauth/spring-security-oauth2 -->
+<!--     <dependency>
+        <groupId>org.springframework.security.oauth</groupId>
+        <artifactId>spring-security-oauth2</artifactId>
+    </dependency>
+ -->
+    <!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-jwt -->
+    <dependency>
+        <groupId>org.springframework.security</groupId>
+        <artifactId>spring-security-jwt</artifactId>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.springframework.security.oauth.boot/spring-security-oauth2-autoconfigure -->
+   <!--  <dependency>
+        <groupId>org.springframework.security.oauth.boot</groupId>
+        <artifactId>spring-security-oauth2-autoconfigure</artifactId>
+        <version>2.1.4.RELEASE</version>
+    </dependency> -->
+    
+    <!-- fdfs文件服务器 -->
+    <dependency>
+	   <groupId>net.oschina.zcx7878</groupId>
+	    <artifactId>fastdfs-client-java</artifactId>
+	    <version>1.27.0.0</version>
+	</dependency>
+	<!-- <dependency>
+	  <groupId>com.milchstrabe.fastdfs.client</groupId>
+	  <artifactId>fastdfs-spring-boot-starter</artifactId>
+	  <version>1.0.1</version>
+	</dependency> -->
   </dependencies>
   <profiles>
 		<!--开发环境 -->
@@ -82,9 +129,9 @@
 				<log.level>debug</log.level>
 				<!-- mysql config -->
 				<mysql.host>localhost:3306</mysql.host>
-				<mysql.database>root</mysql.database>
-				<mysql.username>wusc.321</mysql.username>
-				<mysql.password>xrktest123</mysql.password>
+				<mysql.database>scau_mall_master</mysql.database>
+				<mysql.username>root</mysql.username>
+				<mysql.password>wusc.321</mysql.password>
 				<mysql.slave.host>localhost:3306</mysql.slave.host>
 				<mysql.slave.username>root</mysql.slave.username>
 				<mysql.slave.password>wusc.321</mysql.slave.password>
@@ -96,7 +143,7 @@
 				<redis.cluster.timeout>5000</redis.cluster.timeout>
 				<redis.cluster.maxRedirections>10</redis.cluster.maxRedirections>
 				<redis.cluster.nodes>redis-cluster1-test.db.xrk.k8s:7000,redis-cluster1-test.db.xrk.k8s:7001,redis-cluster1-test.db.xrk.k8s:7002,redis-cluster2-test.db.xrk.k8s:7003,redis-cluster2-test.db.xrk.k8s:7004,redis-cluster2-test.db.xrk.k8s:7005</redis.cluster.nodes>
-				
+				<domain.url>http://42.193.227.2</domain.url>
 			</properties>
 			<activation>
                 <activeByDefault>true</activeByDefault>

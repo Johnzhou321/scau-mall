@@ -1,0 +1,293 @@
+[scau-mall-web] 15:47:41.062 [http-nio-8082-exec-5] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver - Failed to read HTTP message: org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.scau.mall.vo.resp.ResponeData<java.lang.Object> org.scau.mall.web.controller.CustomerController.add(javax.servlet.http.HttpServletRequest,org.scau.mall.vo.ClientLoadRecordVo)
+[scau-mall-web] 15:50:31.716 [http-nio-8082-exec-8] DEBUG org.scau.mall.config.datasource.DynamicDataSource - Use Default datasource : db_master
+[scau-mall-web] 15:50:35.897 [Druid-ConnectionPool-Create-2008619427] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://localhost:3306/scau_mall_master?useUnicode=true&characterEncoding=utf8&ApplicationName=xrk-mall-drp
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2188)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2016)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1861)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301)
+	... 15 common frames omitted
+[scau-mall-web] 15:50:40.000 [Druid-ConnectionPool-Create-2008619427] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://localhost:3306/scau_mall_master?useUnicode=true&characterEncoding=utf8&ApplicationName=xrk-mall-drp
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2188)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2016)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1861)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301)
+	... 15 common frames omitted
+[scau-mall-web] 15:50:44.071 [Druid-ConnectionPool-Create-2008619427] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://localhost:3306/scau_mall_master?useUnicode=true&characterEncoding=utf8&ApplicationName=xrk-mall-drp
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2188)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2016)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1861)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301)
+	... 15 common frames omitted
+[scau-mall-web] 15:50:48.131 [Druid-ConnectionPool-Create-2008619427] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://localhost:3306/scau_mall_master?useUnicode=true&characterEncoding=utf8&ApplicationName=xrk-mall-drp
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2188)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2016)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1861)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301)
+	... 15 common frames omitted
+[scau-mall-web] 15:50:52.220 [Druid-ConnectionPool-Create-2008619427] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://localhost:3306/scau_mall_master?useUnicode=true&characterEncoding=utf8&ApplicationName=xrk-mall-drp
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2188)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2016)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1861)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301)
+	... 15 common frames omitted
+[scau-mall-web] 15:50:56.308 [Druid-ConnectionPool-Create-2008619427] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://localhost:3306/scau_mall_master?useUnicode=true&characterEncoding=utf8&ApplicationName=xrk-mall-drp
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2188)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2016)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1861)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301)
+	... 15 common frames omitted
+[scau-mall-web] 15:50:59.712 [http-nio-8082-exec-8] INFO  org.scau.mall.web.service.OrderServiceImpl - submitClientLoadRecord param body=org.scau.mall.vo.ClientLoadRecordVo@2cfe86de
+[scau-mall-web] 15:50:59.798 [http-nio-8082-exec-8] DEBUG org.scau.mall.config.datasource.DynamicDataSource - Use Default datasource : db_master
+[scau-mall-web] 15:51:00.051 [http-nio-8082-exec-8] DEBUG org.scau.mall.dao.PmsClientMapper.selectByExample - ==>  Preparing: select 'true' as QUERYID, id, name, id_number, telephone, address, status, created_at, updated_at from pms_client WHERE ( id_number = ? ) 
+[scau-mall-web] 15:51:00.114 [http-nio-8082-exec-8] DEBUG org.scau.mall.dao.PmsClientMapper.selectByExample - ==> Parameters: 440881199203032222(String)
+[scau-mall-web] 15:51:00.136 [http-nio-8082-exec-8] DEBUG org.scau.mall.dao.PmsClientMapper.selectByExample - <==      Total: 0
+[scau-mall-web] 15:51:00.139 [http-nio-8082-exec-8] DEBUG org.scau.mall.dao.PmsClientMapper.insert - ==>  Preparing: insert into pms_client (id, name, id_number, telephone, address, status, created_at, updated_at) values (?, ?, ?, ?, ?, ?, ?, ?) 
+[scau-mall-web] 15:51:00.143 [http-nio-8082-exec-8] DEBUG org.scau.mall.dao.PmsClientMapper.insert - ==> Parameters: null, 周莫(String), 440881199203032222(String), 15233321122(String), null, 1(Integer), 2022-09-18 15:51:00.138(Timestamp), null
+[scau-mall-web] 15:51:00.145 [http-nio-8082-exec-8] DEBUG org.scau.mall.dao.PmsClientMapper.insert - <==    Updates: 1
+[scau-mall-web] 15:51:00.149 [http-nio-8082-exec-8] DEBUG org.scau.mall.dao.extend.OrdersMapper.insert - ==>  Preparing: insert into pms_orders (order_no, type, apply_amount, actual_amount, client_id, status, document_url, audit_remark, audit_time, approve_time, created_at, updated_at ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+[scau-mall-web] 15:51:00.150 [http-nio-8082-exec-8] DEBUG org.scau.mall.dao.extend.OrdersMapper.insert - ==> Parameters: 2209186354(String), 车贷,全款车(String), 100000(BigDecimal), null, 20(Integer), 0(Integer), null, null, null, null, 2022-09-18 15:51:00.148(Timestamp), null
+[scau-mall-web] 15:51:00.156 [http-nio-8082-exec-8] DEBUG org.scau.mall.dao.extend.OrdersMapper.insert - <==    Updates: 1
+[scau-mall-web] 15:51:15.547 [http-nio-8082-exec-6] DEBUG org.scau.mall.config.datasource.DynamicDataSource - Use Default datasource : db_master
+[scau-mall-web] 15:51:15.548 [http-nio-8082-exec-6] INFO  org.scau.mall.web.service.OrderServiceImpl - submitClientLoadRecord param body=org.scau.mall.vo.ClientLoadRecordVo@25e7482
+[scau-mall-web] 15:51:15.551 [http-nio-8082-exec-6] DEBUG org.scau.mall.dao.PmsClientMapper.selectByExample - ==>  Preparing: select 'true' as QUERYID, id, name, id_number, telephone, address, status, created_at, updated_at from pms_client WHERE ( id_number = ? ) 
+[scau-mall-web] 15:51:15.552 [http-nio-8082-exec-6] DEBUG org.scau.mall.dao.PmsClientMapper.selectByExample - ==> Parameters: 440881199203032222(String)
+[scau-mall-web] 15:51:15.559 [http-nio-8082-exec-6] DEBUG org.scau.mall.dao.PmsClientMapper.selectByExample - <==      Total: 1
+[scau-mall-web] 15:51:15.564 [http-nio-8082-exec-6] DEBUG org.scau.mall.dao.extend.OrdersMapper.insert - ==>  Preparing: insert into pms_orders (order_no, type, apply_amount, actual_amount, client_id, status, document_url, audit_remark, audit_time, approve_time, created_at, updated_at ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+[scau-mall-web] 15:51:15.565 [http-nio-8082-exec-6] DEBUG org.scau.mall.dao.extend.OrdersMapper.insert - ==> Parameters: 2209187296(String), 车贷,全款车(String), 100000(BigDecimal), null, 20(Integer), 0(Integer), null, null, null, null, 2022-09-18 15:51:15.564(Timestamp), null
+[scau-mall-web] 15:51:15.566 [http-nio-8082-exec-6] DEBUG org.scau.mall.dao.extend.OrdersMapper.insert - <==    Updates: 1
+[scau-mall-web] 16:04:07.218 [http-nio-8082-exec-9] DEBUG org.scau.mall.config.datasource.DynamicDataSource - Use Default datasource : db_master
+[scau-mall-web] 16:04:07.220 [http-nio-8082-exec-9] INFO  org.scau.mall.web.service.OrderServiceImpl - submitClientLoadRecord param body=org.scau.mall.vo.ClientLoadRecordVo@6561f2eb
+[scau-mall-web] 16:04:07.225 [http-nio-8082-exec-9] DEBUG org.scau.mall.dao.PmsClientMapper.selectByExample - ==>  Preparing: select 'true' as QUERYID, id, name, id_number, telephone, address, status, created_at, updated_at from pms_client WHERE ( id_number = ? ) 
+[scau-mall-web] 16:04:07.268 [http-nio-8082-exec-9] DEBUG org.scau.mall.dao.PmsClientMapper.selectByExample - ==> Parameters: 440881199206078799(String)
+[scau-mall-web] 16:04:07.270 [http-nio-8082-exec-9] DEBUG org.scau.mall.dao.PmsClientMapper.selectByExample - <==      Total: 0
+[scau-mall-web] 16:04:07.272 [http-nio-8082-exec-9] DEBUG org.scau.mall.dao.PmsClientMapper.insert - ==>  Preparing: insert into pms_client (id, name, id_number, telephone, address, status, created_at, updated_at) values (?, ?, ?, ?, ?, ?, ?, ?) 
+[scau-mall-web] 16:04:07.274 [http-nio-8082-exec-9] DEBUG org.scau.mall.dao.PmsClientMapper.insert - ==> Parameters: null, 周沫(String), 440881199206078799(String), 15234321122(String), null, 1(Integer), 2022-09-18 16:04:07.27(Timestamp), null
+[scau-mall-web] 16:04:07.276 [http-nio-8082-exec-9] DEBUG org.scau.mall.dao.PmsClientMapper.insert - <==    Updates: 1
+[scau-mall-web] 16:04:07.276 [http-nio-8082-exec-9] DEBUG org.scau.mall.dao.extend.OrdersMapper.insert - ==>  Preparing: insert into pms_orders (order_no, type, apply_amount, actual_amount, client_id, status, document_url, audit_remark, audit_time, approve_time, created_at, updated_at ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+[scau-mall-web] 16:04:07.278 [http-nio-8082-exec-9] DEBUG org.scau.mall.dao.extend.OrdersMapper.insert - ==> Parameters: 2209185601(String), 房贷,车贷(String), 500000(BigDecimal), null, 21(Integer), 0(Integer), null, null, null, null, 2022-09-18 16:04:07.276(Timestamp), null
+[scau-mall-web] 16:04:07.279 [http-nio-8082-exec-9] DEBUG org.scau.mall.dao.extend.OrdersMapper.insert - <==    Updates: 1
+[scau-mall-web] 16:05:33.288 [http-nio-8082-exec-3] DEBUG org.scau.mall.config.datasource.DynamicDataSource - Use Default datasource : db_master
+[scau-mall-web] 16:05:33.289 [http-nio-8082-exec-3] INFO  org.scau.mall.web.service.OrderServiceImpl - submitClientLoadRecord param body=org.scau.mall.vo.ClientLoadRecordVo@379b527e
+[scau-mall-web] 16:05:33.290 [http-nio-8082-exec-3] DEBUG org.scau.mall.dao.PmsClientMapper.selectByExample - ==>  Preparing: select 'true' as QUERYID, id, name, id_number, telephone, address, status, created_at, updated_at from pms_client WHERE ( id_number = ? ) 
+[scau-mall-web] 16:05:33.292 [http-nio-8082-exec-3] DEBUG org.scau.mall.dao.PmsClientMapper.selectByExample - ==> Parameters: 440881199206078791(String)
+[scau-mall-web] 16:05:33.293 [http-nio-8082-exec-3] DEBUG org.scau.mall.dao.PmsClientMapper.selectByExample - <==      Total: 0
+[scau-mall-web] 16:05:33.294 [http-nio-8082-exec-3] DEBUG org.scau.mall.dao.PmsClientMapper.insert - ==>  Preparing: insert into pms_client (id, name, id_number, telephone, address, status, created_at, updated_at) values (?, ?, ?, ?, ?, ?, ?, ?) 
+[scau-mall-web] 16:05:33.294 [http-nio-8082-exec-3] DEBUG org.scau.mall.dao.PmsClientMapper.insert - ==> Parameters: null, 舟中(String), 440881199206078791(String), 15233221122(String), null, 1(Integer), 2022-09-18 16:05:33.293(Timestamp), null
+[scau-mall-web] 16:05:33.296 [http-nio-8082-exec-3] DEBUG org.scau.mall.dao.PmsClientMapper.insert - <==    Updates: 1
+[scau-mall-web] 16:05:33.297 [http-nio-8082-exec-3] DEBUG org.scau.mall.dao.extend.OrdersMapper.insert - ==>  Preparing: insert into pms_orders (order_no, type, apply_amount, actual_amount, client_id, status, document_url, audit_remark, audit_time, approve_time, created_at, updated_at ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+[scau-mall-web] 16:05:33.299 [http-nio-8082-exec-3] DEBUG org.scau.mall.dao.extend.OrdersMapper.insert - ==> Parameters: 2209187215(String), 全款房,车贷(String), 400000(BigDecimal), null, 22(Integer), 0(Integer), null, null, null, null, 2022-09-18 16:05:33.296(Timestamp), null
+[scau-mall-web] 16:05:33.301 [http-nio-8082-exec-3] DEBUG org.scau.mall.dao.extend.OrdersMapper.insert - <==    Updates: 1
+[scau-mall-web] 16:09:51.251 [http-nio-8082-exec-7] DEBUG org.scau.mall.config.datasource.DynamicDataSource - Use Default datasource : db_master
+[scau-mall-web] 16:09:51.251 [http-nio-8082-exec-7] INFO  org.scau.mall.web.service.OrderServiceImpl - submitClientLoadRecord param body=org.scau.mall.vo.ClientLoadRecordVo@7e01ea9f
+[scau-mall-web] 16:09:51.254 [http-nio-8082-exec-7] DEBUG org.scau.mall.dao.PmsClientMapper.selectByExample - ==>  Preparing: select 'true' as QUERYID, id, name, id_number, telephone, address, status, created_at, updated_at from pms_client WHERE ( id_number = ? ) 
+[scau-mall-web] 16:09:51.255 [http-nio-8082-exec-7] DEBUG org.scau.mall.dao.PmsClientMapper.selectByExample - ==> Parameters: 440881199004058866(String)
+[scau-mall-web] 16:09:51.256 [http-nio-8082-exec-7] DEBUG org.scau.mall.dao.PmsClientMapper.selectByExample - <==      Total: 0
+[scau-mall-web] 16:09:51.257 [http-nio-8082-exec-7] DEBUG org.scau.mall.dao.PmsClientMapper.insert - ==>  Preparing: insert into pms_client (id, name, id_number, telephone, address, status, created_at, updated_at) values (?, ?, ?, ?, ?, ?, ?, ?) 
+[scau-mall-web] 16:09:51.259 [http-nio-8082-exec-7] DEBUG org.scau.mall.dao.PmsClientMapper.insert - ==> Parameters: null, 周默(String), 440881199004058866(String), 15217973332(String), null, 1(Integer), 2022-09-18 16:09:51.257(Timestamp), null
+[scau-mall-web] 16:09:51.261 [http-nio-8082-exec-7] DEBUG org.scau.mall.dao.PmsClientMapper.insert - <==    Updates: 1
+[scau-mall-web] 16:09:51.262 [http-nio-8082-exec-7] DEBUG org.scau.mall.dao.extend.OrdersMapper.insert - ==>  Preparing: insert into pms_orders (order_no, type, apply_amount, actual_amount, client_id, status, document_url, audit_remark, audit_time, approve_time, created_at, updated_at ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+[scau-mall-web] 16:09:51.263 [http-nio-8082-exec-7] DEBUG org.scau.mall.dao.extend.OrdersMapper.insert - ==> Parameters: 2209180296(String), 房贷(String), 200000(BigDecimal), null, 23(Integer), 0(Integer), null, null, null, null, 2022-09-18 16:09:51.261(Timestamp), null
+[scau-mall-web] 16:09:51.264 [http-nio-8082-exec-7] DEBUG org.scau.mall.dao.extend.OrdersMapper.insert - <==    Updates: 1
+[scau-mall-web] 16:14:45.785 [http-nio-8082-exec-1] DEBUG org.scau.mall.config.datasource.DynamicDataSource - Use Default datasource : db_master
+[scau-mall-web] 16:14:45.787 [http-nio-8082-exec-1] INFO  org.scau.mall.web.service.OrderServiceImpl - submitClientLoadRecord param body=org.scau.mall.vo.ClientLoadRecordVo@236d63fd
+[scau-mall-web] 16:14:45.790 [http-nio-8082-exec-1] DEBUG org.scau.mall.dao.PmsClientMapper.selectByExample - ==>  Preparing: select 'true' as QUERYID, id, name, id_number, telephone, address, status, created_at, updated_at from pms_client WHERE ( id_number = ? ) 
+[scau-mall-web] 16:14:45.791 [http-nio-8082-exec-1] DEBUG org.scau.mall.dao.PmsClientMapper.selectByExample - ==> Parameters: 440881199705058833(String)
+[scau-mall-web] 16:14:45.793 [http-nio-8082-exec-1] DEBUG org.scau.mall.dao.PmsClientMapper.selectByExample - <==      Total: 0
+[scau-mall-web] 16:14:45.796 [http-nio-8082-exec-1] DEBUG org.scau.mall.dao.PmsClientMapper.insert - ==>  Preparing: insert into pms_client (id, name, id_number, telephone, address, status, created_at, updated_at) values (?, ?, ?, ?, ?, ?, ?, ?) 
+[scau-mall-web] 16:14:45.803 [http-nio-8082-exec-1] DEBUG org.scau.mall.dao.PmsClientMapper.insert - ==> Parameters: null, 周么(String), 440881199705058833(String), 15234442677(String), null, 1(Integer), 2022-09-18 16:14:45.794(Timestamp), null
+[scau-mall-web] 16:14:45.807 [http-nio-8082-exec-1] DEBUG org.scau.mall.dao.PmsClientMapper.insert - <==    Updates: 1
+[scau-mall-web] 16:14:45.808 [http-nio-8082-exec-1] DEBUG org.scau.mall.dao.extend.OrdersMapper.insert - ==>  Preparing: insert into pms_orders (order_no, type, apply_amount, actual_amount, client_id, status, document_url, audit_remark, audit_time, approve_time, created_at, updated_at ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+[scau-mall-web] 16:14:45.812 [http-nio-8082-exec-1] DEBUG org.scau.mall.dao.extend.OrdersMapper.insert - ==> Parameters: 2209189150(String), 营业执照,保单(String), 300000(BigDecimal), null, 24(Integer), 0(Integer), null, null, null, null, 2022-09-18 16:14:45.808(Timestamp), null
+[scau-mall-web] 16:14:45.813 [http-nio-8082-exec-1] DEBUG org.scau.mall.dao.extend.OrdersMapper.insert - <==    Updates: 1

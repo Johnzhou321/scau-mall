@@ -1,0 +1,373 @@
+[scau-mall-web] 21:34:43.402 [main] INFO  org.scau.mall.web.MallWebApplication - Starting MallWebApplication on DESKTOP-KEBSTMU with PID 22872 (D:\workspace-xrk\scau-mall\scau-mall\scau-mall-web\target\classes started by John in D:\workspace-xrk\scau-mall\scau-mall\scau-mall-web)
+[scau-mall-web] 21:34:43.431 [main] DEBUG org.scau.mall.web.MallWebApplication - Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+[scau-mall-web] 21:34:43.432 [main] INFO  org.scau.mall.web.MallWebApplication - No active profile set, falling back to default profiles: default
+[scau-mall-web] 21:34:43.652 [main] INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@146587a2: startup date [Wed Jan 19 21:34:43 CST 2022]; root of context hierarchy
+[scau-mall-web] 21:34:44.813 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+[scau-mall-web] 21:34:46.940 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[scau-mall-web] 21:34:48.620 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'druidDataSourceConfig' of type [org.scau.mall.config.datasource.DruidDataSourceConfig$$EnhancerBySpringCGLIB$$2de3043] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 21:34:48.623 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dynamicDataSourceConfig' of type [org.scau.mall.config.datasource.DynamicDataSourceConfig$$EnhancerBySpringCGLIB$$afae91e0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 21:34:50.496 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[scau-mall-web] 21:34:50.537 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dataSource' of type [org.scau.mall.config.datasource.DynamicDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 21:34:50.542 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'mybatisConfig' of type [org.scau.mall.config.MybatisConfig$$EnhancerBySpringCGLIB$$f1e8e574] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 21:34:51.696 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 21:34:51.712 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'pmsClientMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 21:34:51.719 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'pmsClientLoanRecordMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 21:34:51.722 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'clientLoanRecordMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 21:34:52.157 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [org.scau.mall.config.redis.RedisConfig$$EnhancerBySpringCGLIB$$f6df69c9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 21:34:52.953 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$25ecbcaa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 21:34:53.180 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$dcda868c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 21:34:55.659 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8081 (http)
+[scau-mall-web] 21:34:55.751 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+[scau-mall-web] 21:34:55.799 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+[scau-mall-web] 21:34:55.800 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.29
+[scau-mall-web] 21:34:56.388 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[scau-mall-web] 21:34:56.389 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 12736 ms
+[scau-mall-web] 21:34:57.364 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+[scau-mall-web] 21:34:57.380 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[scau-mall-web] 21:34:57.383 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[scau-mall-web] 21:34:57.384 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[scau-mall-web] 21:34:57.385 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[scau-mall-web] 21:35:00.584 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@146587a2: startup date [Wed Jan 19 21:34:43 CST 2022]; root of context hierarchy
+[scau-mall-web] 21:35:00.973 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/api/v1/customer/index],methods=[GET]}" onto public java.lang.String org.scau.mall.web.controller.CustomerController.index(javax.servlet.http.HttpServletRequest,org.scau.mall.vo.ClientLoadRecordVo)
+[scau-mall-web] 21:35:00.977 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/api/v1/customer/add]}" onto public org.scau.mall.vo.ResponeData<java.lang.Object> org.scau.mall.web.controller.CustomerController.add(javax.servlet.http.HttpServletRequest,org.scau.mall.vo.ClientLoadRecordVo)
+[scau-mall-web] 21:35:00.978 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/api/v1/customer/list]}" onto public org.scau.mall.vo.ResponeData<org.scau.mall.vo.PmsClientShowVo> org.scau.mall.web.controller.CustomerController.list(javax.servlet.http.HttpServletRequest,org.scau.mall.vo.PmsClientQueryVo)
+[scau-mall-web] 21:35:00.979 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/api/v1/customer/middle]}" onto public java.lang.String org.scau.mall.web.controller.CustomerController.middle(org.springframework.ui.ModelMap)
+[scau-mall-web] 21:35:00.980 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/api/v1/customer/encodeImg]}" onto public void org.scau.mall.web.controller.CustomerController.encodeImg(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+[scau-mall-web] 21:35:00.984 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/test/index]}" onto public java.lang.String org.scau.mall.web.controller.IndexController.index(org.springframework.ui.ModelMap)
+[scau-mall-web] 21:35:00.986 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/test/middle]}" onto public java.lang.String org.scau.mall.web.controller.IndexController.middle(org.springframework.ui.ModelMap)
+[scau-mall-web] 21:35:00.989 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/test/encodeImg]}" onto public void org.scau.mall.web.controller.IndexController.encodeImg(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+[scau-mall-web] 21:35:00.994 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/login/index]}" onto public java.lang.String org.scau.mall.web.controller.LoginController.index(org.springframework.ui.ModelMap)
+[scau-mall-web] 21:35:00.997 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/login/submit]}" onto public java.lang.String org.scau.mall.web.controller.LoginController.submit(org.springframework.ui.ModelMap)
+[scau-mall-web] 21:35:01.004 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[scau-mall-web] 21:35:01.005 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[scau-mall-web] 21:35:01.189 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[scau-mall-web] 21:35:01.189 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[scau-mall-web] 21:35:01.430 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[scau-mall-web] 21:35:03.312 [main] INFO  org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+[scau-mall-web] 21:35:04.928 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[scau-mall-web] 21:35:04.961 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+[scau-mall-web] 21:35:05.012 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+[scau-mall-web] 21:35:05.091 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8081 (http)
+[scau-mall-web] 21:35:05.113 [main] INFO  org.scau.mall.web.MallWebApplication - Started MallWebApplication in 24.395 seconds (JVM running for 29.298)
+[scau-mall-web] 21:35:37.654 [http-nio-8081-exec-3] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[scau-mall-web] 21:35:37.654 [http-nio-8081-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[scau-mall-web] 21:35:37.790 [http-nio-8081-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 136 ms
+[scau-mall-web] 21:43:00.699 [http-nio-8081-exec-2] DEBUG org.scau.mall.config.datasource.DynamicDataSource - Use Default datasource : db_master
+[scau-mall-web] 21:43:03.740 [http-nio-8081-exec-2] DEBUG org.scau.mall.config.datasource.DynamicDataSource - Use Default datasource : db_master
+[scau-mall-web] 21:43:03.842 [http-nio-8081-exec-2] DEBUG org.scau.mall.dao.extend.ClientLoanRecordMapper.countPmsClientLoanRecordList - ==>  Preparing: select count(1) from pms_client pc left join pms_client_loan_record pclr on pc.id=pclr.client_id 
+[scau-mall-web] 21:43:04.472 [http-nio-8081-exec-2] DEBUG org.scau.mall.dao.extend.ClientLoanRecordMapper.countPmsClientLoanRecordList - ==> Parameters: 
+[scau-mall-web] 21:43:05.052 [http-nio-8081-exec-2] DEBUG org.scau.mall.dao.extend.ClientLoanRecordMapper.countPmsClientLoanRecordList - <==      Total: 1
+[scau-mall-web] 21:43:05.110 [http-nio-8081-exec-2] DEBUG org.scau.mall.config.datasource.DynamicDataSource - Use Default datasource : db_master
+[scau-mall-web] 21:43:05.112 [http-nio-8081-exec-2] DEBUG org.scau.mall.dao.extend.ClientLoanRecordMapper.getPaginationPmsClientLoanRecordList - ==>  Preparing: select pc.id,pc.`name`, pclr.client_id, pc.id_number,pc.telephone,pc.address,pclr.type, pclr.amount,pclr.`status` as recordStatus from pms_client pc left join pms_client_loan_record pclr on pc.id=pclr.client_id ORDER BY pc.created_at DESC LIMIT ? OFFSET ? 
+[scau-mall-web] 21:43:05.116 [http-nio-8081-exec-2] DEBUG org.scau.mall.dao.extend.ClientLoanRecordMapper.getPaginationPmsClientLoanRecordList - ==> Parameters: 20(Integer), 0(Integer)
+[scau-mall-web] 21:43:10.642 [http-nio-8081-exec-2] ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.reflection.ReflectionException: Illegal overloaded getter method with ambiguous type for property recordStatus in class class org.scau.mall.vo.PmsClientShowVo.  This breaks the JavaBeans specification and can cause unpredicatble results.] with root cause
+org.apache.ibatis.reflection.ReflectionException: Illegal overloaded getter method with ambiguous type for property recordStatus in class class org.scau.mall.vo.PmsClientShowVo.  This breaks the JavaBeans specification and can cause unpredicatble results.
+	at org.apache.ibatis.reflection.Reflector.resolveGetterConflicts(Reflector.java:127)
+	at org.apache.ibatis.reflection.Reflector.addGetMethods(Reflector.java:110)
+	at org.apache.ibatis.reflection.Reflector.<init>(Reflector.java:62)
+	at org.apache.ibatis.reflection.DefaultReflectorFactory.findForClass(DefaultReflectorFactory.java:44)
+	at org.apache.ibatis.reflection.MetaClass.<init>(MetaClass.java:39)
+	at org.apache.ibatis.reflection.MetaClass.forClass(MetaClass.java:43)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.createResultObject(DefaultResultSetHandler.java:524)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.createResultObject(DefaultResultSetHandler.java:508)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.getRowValue(DefaultResultSetHandler.java:339)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValuesForSimpleResultMap(DefaultResultSetHandler.java:298)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValues(DefaultResultSetHandler.java:273)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSet(DefaultResultSetHandler.java:246)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSets(DefaultResultSetHandler.java:160)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:63)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:78)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:303)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:154)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:102)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:82)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.ibatis.plugin.Invocation.proceed(Invocation.java:49)
+	at com.github.pagehelper.SqlUtil._processPage(SqlUtil.java:401)
+	at com.github.pagehelper.SqlUtil.processPage(SqlUtil.java:374)
+	at com.github.pagehelper.PageHelper.intercept(PageHelper.java:254)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy83.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:120)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:113)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:386)
+	at com.sun.proxy.$Proxy48.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:205)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:122)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:64)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:53)
+	at com.sun.proxy.$Proxy73.getPaginationPmsClientLoanRecordList(Unknown Source)
+	at org.scau.mall.web.service.ClientLoanRecordService.getPaginationPmsClientLoanRecordList(ClientLoanRecordService.java:73)
+	at org.scau.mall.web.service.ClientLoanRecordService$$FastClassBySpringCGLIB$$aa96ba5c.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:669)
+	at org.scau.mall.web.service.ClientLoanRecordService$$EnhancerBySpringCGLIB$$a6235bc0.getPaginationPmsClientLoanRecordList(<generated>)
+	at org.scau.mall.web.controller.CustomerController.list(CustomerController.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+[scau-mall-web] 21:49:51.950 [main] INFO  org.scau.mall.web.MallWebApplication - Starting MallWebApplication on DESKTOP-KEBSTMU with PID 3088 (D:\workspace-xrk\scau-mall\scau-mall\scau-mall-web\target\classes started by John in D:\workspace-xrk\scau-mall\scau-mall\scau-mall-web)
+[scau-mall-web] 21:49:51.973 [main] DEBUG org.scau.mall.web.MallWebApplication - Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+[scau-mall-web] 21:49:51.974 [main] INFO  org.scau.mall.web.MallWebApplication - No active profile set, falling back to default profiles: default
+[scau-mall-web] 21:49:52.140 [main] INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@146587a2: startup date [Wed Jan 19 21:49:52 CST 2022]; root of context hierarchy
+[scau-mall-web] 21:49:52.911 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+[scau-mall-web] 21:49:54.283 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[scau-mall-web] 21:49:55.821 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'druidDataSourceConfig' of type [org.scau.mall.config.datasource.DruidDataSourceConfig$$EnhancerBySpringCGLIB$$f2807803] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 21:49:55.825 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dynamicDataSourceConfig' of type [org.scau.mall.config.datasource.DynamicDataSourceConfig$$EnhancerBySpringCGLIB$$9f50d9a0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 21:49:56.937 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[scau-mall-web] 21:49:56.977 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dataSource' of type [org.scau.mall.config.datasource.DynamicDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 21:49:56.981 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'mybatisConfig' of type [org.scau.mall.config.MybatisConfig$$EnhancerBySpringCGLIB$$e18b2d34] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 21:49:57.614 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 21:49:57.624 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'pmsClientMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 21:49:57.630 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'pmsClientLoanRecordMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 21:49:57.633 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'clientLoanRecordMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 21:49:57.900 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [org.scau.mall.config.redis.RedisConfig$$EnhancerBySpringCGLIB$$e681b189] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 21:49:58.517 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$158f046a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 21:49:58.720 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cc7cce4c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 21:50:01.000 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8081 (http)
+[scau-mall-web] 21:50:01.064 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+[scau-mall-web] 21:50:01.099 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+[scau-mall-web] 21:50:01.099 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.29
+[scau-mall-web] 21:50:01.654 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[scau-mall-web] 21:50:01.656 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 9517 ms
+[scau-mall-web] 21:50:02.494 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+[scau-mall-web] 21:50:02.507 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[scau-mall-web] 21:50:02.556 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[scau-mall-web] 21:50:02.558 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[scau-mall-web] 21:50:02.558 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[scau-mall-web] 21:50:05.227 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@146587a2: startup date [Wed Jan 19 21:49:52 CST 2022]; root of context hierarchy
+[scau-mall-web] 21:50:05.478 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/api/v1/customer/index],methods=[GET]}" onto public java.lang.String org.scau.mall.web.controller.CustomerController.index(javax.servlet.http.HttpServletRequest,org.scau.mall.vo.ClientLoadRecordVo)
+[scau-mall-web] 21:50:05.481 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/api/v1/customer/add]}" onto public org.scau.mall.vo.ResponeData<java.lang.Object> org.scau.mall.web.controller.CustomerController.add(javax.servlet.http.HttpServletRequest,org.scau.mall.vo.ClientLoadRecordVo)
+[scau-mall-web] 21:50:05.482 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/api/v1/customer/list]}" onto public org.scau.mall.vo.ResponeData<org.scau.mall.vo.PmsClientShowVo> org.scau.mall.web.controller.CustomerController.list(javax.servlet.http.HttpServletRequest,org.scau.mall.vo.PmsClientQueryVo)
+[scau-mall-web] 21:50:05.482 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/api/v1/customer/middle]}" onto public java.lang.String org.scau.mall.web.controller.CustomerController.middle(org.springframework.ui.ModelMap)
+[scau-mall-web] 21:50:05.483 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/api/v1/customer/encodeImg]}" onto public void org.scau.mall.web.controller.CustomerController.encodeImg(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+[scau-mall-web] 21:50:05.486 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/test/index]}" onto public java.lang.String org.scau.mall.web.controller.IndexController.index(org.springframework.ui.ModelMap)
+[scau-mall-web] 21:50:05.487 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/test/middle]}" onto public java.lang.String org.scau.mall.web.controller.IndexController.middle(org.springframework.ui.ModelMap)
+[scau-mall-web] 21:50:05.488 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/test/encodeImg]}" onto public void org.scau.mall.web.controller.IndexController.encodeImg(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+[scau-mall-web] 21:50:05.489 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/login/index]}" onto public java.lang.String org.scau.mall.web.controller.LoginController.index(org.springframework.ui.ModelMap)
+[scau-mall-web] 21:50:05.490 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/login/submit]}" onto public java.lang.String org.scau.mall.web.controller.LoginController.submit(org.springframework.ui.ModelMap)
+[scau-mall-web] 21:50:05.495 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[scau-mall-web] 21:50:05.496 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[scau-mall-web] 21:50:05.681 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[scau-mall-web] 21:50:05.688 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[scau-mall-web] 21:50:05.884 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[scau-mall-web] 21:50:07.238 [main] INFO  org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+[scau-mall-web] 21:50:08.394 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[scau-mall-web] 21:50:08.436 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+[scau-mall-web] 21:50:08.479 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+[scau-mall-web] 21:50:08.592 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8081 (http)
+[scau-mall-web] 21:50:08.610 [main] INFO  org.scau.mall.web.MallWebApplication - Started MallWebApplication in 18.479 seconds (JVM running for 22.231)
+[scau-mall-web] 21:50:28.239 [http-nio-8081-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[scau-mall-web] 21:50:28.239 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[scau-mall-web] 21:50:28.375 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 135 ms
+[scau-mall-web] 21:50:41.235 [http-nio-8081-exec-8] DEBUG org.scau.mall.config.datasource.DynamicDataSource - Use Default datasource : db_master
+[scau-mall-web] 21:50:44.457 [http-nio-8081-exec-8] DEBUG org.scau.mall.config.datasource.DynamicDataSource - Use Default datasource : db_master
+[scau-mall-web] 21:50:44.592 [http-nio-8081-exec-8] DEBUG org.scau.mall.dao.extend.ClientLoanRecordMapper.countPmsClientLoanRecordList - ==>  Preparing: select count(1) from pms_client pc left join pms_client_loan_record pclr on pc.id=pclr.client_id 
+[scau-mall-web] 21:50:45.257 [http-nio-8081-exec-8] DEBUG org.scau.mall.dao.extend.ClientLoanRecordMapper.countPmsClientLoanRecordList - ==> Parameters: 
+[scau-mall-web] 21:50:45.773 [http-nio-8081-exec-8] DEBUG org.scau.mall.dao.extend.ClientLoanRecordMapper.countPmsClientLoanRecordList - <==      Total: 1
+[scau-mall-web] 21:50:45.783 [http-nio-8081-exec-8] DEBUG org.scau.mall.config.datasource.DynamicDataSource - Use Default datasource : db_master
+[scau-mall-web] 21:50:45.784 [http-nio-8081-exec-8] DEBUG org.scau.mall.dao.extend.ClientLoanRecordMapper.getPaginationPmsClientLoanRecordList - ==>  Preparing: select pc.id,pc.`name`, pclr.client_id, pc.id_number,pc.telephone,pc.address,pclr.type, pclr.amount,pclr.`status` as recordStatus from pms_client pc left join pms_client_loan_record pclr on pc.id=pclr.client_id ORDER BY pc.created_at DESC LIMIT ? OFFSET ? 
+[scau-mall-web] 21:50:45.787 [http-nio-8081-exec-8] DEBUG org.scau.mall.dao.extend.ClientLoanRecordMapper.getPaginationPmsClientLoanRecordList - ==> Parameters: 20(Integer), 0(Integer)
+[scau-mall-web] 21:50:45.804 [http-nio-8081-exec-8] DEBUG org.scau.mall.dao.extend.ClientLoanRecordMapper.getPaginationPmsClientLoanRecordList - <==      Total: 1
+[scau-mall-web] 21:51:38.564 [http-nio-8081-exec-7] DEBUG org.scau.mall.config.datasource.DynamicDataSource - Use Default datasource : db_master
+[scau-mall-web] 21:51:38.565 [http-nio-8081-exec-7] DEBUG org.scau.mall.dao.extend.ClientLoanRecordMapper.countPmsClientLoanRecordList - ==>  Preparing: select count(1) from pms_client pc left join pms_client_loan_record pclr on pc.id=pclr.client_id 
+[scau-mall-web] 21:51:38.565 [http-nio-8081-exec-7] DEBUG org.scau.mall.dao.extend.ClientLoanRecordMapper.countPmsClientLoanRecordList - ==> Parameters: 
+[scau-mall-web] 21:51:38.572 [http-nio-8081-exec-7] DEBUG org.scau.mall.dao.extend.ClientLoanRecordMapper.countPmsClientLoanRecordList - <==      Total: 1
+[scau-mall-web] 21:51:38.574 [http-nio-8081-exec-7] DEBUG org.scau.mall.config.datasource.DynamicDataSource - Use Default datasource : db_master
+[scau-mall-web] 21:51:38.575 [http-nio-8081-exec-7] DEBUG org.scau.mall.dao.extend.ClientLoanRecordMapper.getPaginationPmsClientLoanRecordList - ==>  Preparing: select pc.id,pc.`name`, pclr.client_id, pc.id_number,pc.telephone,pc.address,pclr.type, pclr.amount,pclr.`status` as recordStatus from pms_client pc left join pms_client_loan_record pclr on pc.id=pclr.client_id ORDER BY pc.created_at DESC LIMIT ? OFFSET ? 
+[scau-mall-web] 21:51:38.575 [http-nio-8081-exec-7] DEBUG org.scau.mall.dao.extend.ClientLoanRecordMapper.getPaginationPmsClientLoanRecordList - ==> Parameters: 20(Integer), 0(Integer)
+[scau-mall-web] 21:51:38.586 [http-nio-8081-exec-7] DEBUG org.scau.mall.dao.extend.ClientLoanRecordMapper.getPaginationPmsClientLoanRecordList - <==      Total: 1
+[scau-mall-web] 21:52:21.969 [http-nio-8081-exec-7] DEBUG org.scau.mall.config.datasource.DynamicDataSource - Use Default datasource : db_master
+[scau-mall-web] 21:52:21.970 [http-nio-8081-exec-7] DEBUG org.scau.mall.dao.extend.ClientLoanRecordMapper.countPmsClientLoanRecordList - ==>  Preparing: select count(1) from pms_client pc left join pms_client_loan_record pclr on pc.id=pclr.client_id 
+[scau-mall-web] 21:52:21.971 [http-nio-8081-exec-7] DEBUG org.scau.mall.dao.extend.ClientLoanRecordMapper.countPmsClientLoanRecordList - ==> Parameters: 
+[scau-mall-web] 21:52:21.973 [http-nio-8081-exec-7] DEBUG org.scau.mall.dao.extend.ClientLoanRecordMapper.countPmsClientLoanRecordList - <==      Total: 1
+[scau-mall-web] 21:52:21.975 [http-nio-8081-exec-7] DEBUG org.scau.mall.config.datasource.DynamicDataSource - Use Default datasource : db_master
+[scau-mall-web] 21:52:21.975 [http-nio-8081-exec-7] DEBUG org.scau.mall.dao.extend.ClientLoanRecordMapper.getPaginationPmsClientLoanRecordList - ==>  Preparing: select pc.id,pc.`name`, pclr.client_id, pc.id_number,pc.telephone,pc.address,pclr.type, pclr.amount,pclr.`status` as recordStatus from pms_client pc left join pms_client_loan_record pclr on pc.id=pclr.client_id ORDER BY pc.created_at DESC LIMIT ? OFFSET ? 
+[scau-mall-web] 21:52:21.976 [http-nio-8081-exec-7] DEBUG org.scau.mall.dao.extend.ClientLoanRecordMapper.getPaginationPmsClientLoanRecordList - ==> Parameters: 20(Integer), 0(Integer)
+[scau-mall-web] 21:52:21.981 [http-nio-8081-exec-7] DEBUG org.scau.mall.dao.extend.ClientLoanRecordMapper.getPaginationPmsClientLoanRecordList - <==      Total: 1
+[scau-mall-web] 21:53:35.389 [http-nio-8081-exec-4] DEBUG org.scau.mall.config.datasource.DynamicDataSource - Use Default datasource : db_master
+[scau-mall-web] 21:53:35.390 [http-nio-8081-exec-4] DEBUG org.scau.mall.dao.extend.ClientLoanRecordMapper.countPmsClientLoanRecordList - ==>  Preparing: select count(1) from pms_client pc left join pms_client_loan_record pclr on pc.id=pclr.client_id 
+[scau-mall-web] 21:53:35.412 [http-nio-8081-exec-4] DEBUG org.scau.mall.dao.extend.ClientLoanRecordMapper.countPmsClientLoanRecordList - ==> Parameters: 
+[scau-mall-web] 21:53:35.415 [http-nio-8081-exec-4] DEBUG org.scau.mall.dao.extend.ClientLoanRecordMapper.countPmsClientLoanRecordList - <==      Total: 1
+[scau-mall-web] 21:53:35.416 [http-nio-8081-exec-4] DEBUG org.scau.mall.config.datasource.DynamicDataSource - Use Default datasource : db_master
+[scau-mall-web] 21:53:35.417 [http-nio-8081-exec-4] DEBUG org.scau.mall.dao.extend.ClientLoanRecordMapper.getPaginationPmsClientLoanRecordList - ==>  Preparing: select pc.id,pc.`name`, pclr.client_id, pc.id_number,pc.telephone,pc.address,pclr.type, pclr.amount,pclr.`status` as recordStatus from pms_client pc left join pms_client_loan_record pclr on pc.id=pclr.client_id ORDER BY pc.created_at DESC LIMIT ? OFFSET ? 
+[scau-mall-web] 21:53:35.419 [http-nio-8081-exec-4] DEBUG org.scau.mall.dao.extend.ClientLoanRecordMapper.getPaginationPmsClientLoanRecordList - ==> Parameters: 20(Integer), 0(Integer)
+[scau-mall-web] 21:53:35.424 [http-nio-8081-exec-4] DEBUG org.scau.mall.dao.extend.ClientLoanRecordMapper.getPaginationPmsClientLoanRecordList - <==      Total: 1
+[scau-mall-web] 21:53:54.255 [http-nio-8081-exec-6] DEBUG org.scau.mall.config.datasource.DynamicDataSource - Use Default datasource : db_master
+[scau-mall-web] 21:53:54.258 [http-nio-8081-exec-6] DEBUG org.scau.mall.dao.extend.ClientLoanRecordMapper.countPmsClientLoanRecordList - ==>  Preparing: select count(1) from pms_client pc left join pms_client_loan_record pclr on pc.id=pclr.client_id 
+[scau-mall-web] 21:53:54.262 [http-nio-8081-exec-6] DEBUG org.scau.mall.dao.extend.ClientLoanRecordMapper.countPmsClientLoanRecordList - ==> Parameters: 
+[scau-mall-web] 21:53:54.265 [http-nio-8081-exec-6] DEBUG org.scau.mall.dao.extend.ClientLoanRecordMapper.countPmsClientLoanRecordList - <==      Total: 1
+[scau-mall-web] 21:53:54.266 [http-nio-8081-exec-6] DEBUG org.scau.mall.config.datasource.DynamicDataSource - Use Default datasource : db_master
+[scau-mall-web] 21:53:54.267 [http-nio-8081-exec-6] DEBUG org.scau.mall.dao.extend.ClientLoanRecordMapper.getPaginationPmsClientLoanRecordList - ==>  Preparing: select pc.id,pc.`name`, pclr.client_id, pc.id_number,pc.telephone,pc.address,pclr.type, pclr.amount,pclr.`status` as recordStatus from pms_client pc left join pms_client_loan_record pclr on pc.id=pclr.client_id ORDER BY pc.created_at DESC LIMIT ? OFFSET ? 
+[scau-mall-web] 21:53:54.267 [http-nio-8081-exec-6] DEBUG org.scau.mall.dao.extend.ClientLoanRecordMapper.getPaginationPmsClientLoanRecordList - ==> Parameters: 20(Integer), 0(Integer)
+[scau-mall-web] 21:53:54.272 [http-nio-8081-exec-6] DEBUG org.scau.mall.dao.extend.ClientLoanRecordMapper.getPaginationPmsClientLoanRecordList - <==      Total: 1
+[scau-mall-web] 21:54:47.787 [http-nio-8081-exec-3] DEBUG org.scau.mall.config.datasource.DynamicDataSource - Use Default datasource : db_master
+[scau-mall-web] 21:54:47.788 [http-nio-8081-exec-3] DEBUG org.scau.mall.dao.extend.ClientLoanRecordMapper.countPmsClientLoanRecordList - ==>  Preparing: select count(1) from pms_client pc left join pms_client_loan_record pclr on pc.id=pclr.client_id 
+[scau-mall-web] 21:54:47.789 [http-nio-8081-exec-3] DEBUG org.scau.mall.dao.extend.ClientLoanRecordMapper.countPmsClientLoanRecordList - ==> Parameters: 
+[scau-mall-web] 21:54:47.793 [http-nio-8081-exec-3] DEBUG org.scau.mall.dao.extend.ClientLoanRecordMapper.countPmsClientLoanRecordList - <==      Total: 1
+[scau-mall-web] 21:54:47.795 [http-nio-8081-exec-3] DEBUG org.scau.mall.config.datasource.DynamicDataSource - Use Default datasource : db_master
+[scau-mall-web] 21:54:47.796 [http-nio-8081-exec-3] DEBUG org.scau.mall.dao.extend.ClientLoanRecordMapper.getPaginationPmsClientLoanRecordList - ==>  Preparing: select pc.id,pc.`name`, pclr.client_id, pc.id_number,pc.telephone,pc.address,pclr.type, pclr.amount,pclr.`status` as recordStatus from pms_client pc left join pms_client_loan_record pclr on pc.id=pclr.client_id ORDER BY pc.created_at DESC LIMIT ? OFFSET ? 
+[scau-mall-web] 21:54:47.797 [http-nio-8081-exec-3] DEBUG org.scau.mall.dao.extend.ClientLoanRecordMapper.getPaginationPmsClientLoanRecordList - ==> Parameters: 20(Integer), 0(Integer)
+[scau-mall-web] 21:54:47.801 [http-nio-8081-exec-3] DEBUG org.scau.mall.dao.extend.ClientLoanRecordMapper.getPaginationPmsClientLoanRecordList - <==      Total: 1
+[scau-mall-web] 09:24:48.589 [main] INFO  org.scau.mall.web.MallWebApplication - Starting MallWebApplication on DESKTOP-KEBSTMU with PID 30484 (D:\workspace-xrk\scau-mall\scau-mall\scau-mall-web\target\classes started by John in D:\workspace-xrk\scau-mall\scau-mall\scau-mall-web)
+[scau-mall-web] 09:24:48.621 [main] DEBUG org.scau.mall.web.MallWebApplication - Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+[scau-mall-web] 09:24:48.621 [main] INFO  org.scau.mall.web.MallWebApplication - No active profile set, falling back to default profiles: default
+[scau-mall-web] 09:24:48.733 [main] INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@146587a2: startup date [Thu Jan 20 09:24:48 CST 2022]; root of context hierarchy
+[scau-mall-web] 09:24:49.282 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+[scau-mall-web] 09:24:50.068 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[scau-mall-web] 09:24:51.126 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'druidDataSourceConfig' of type [org.scau.mall.config.datasource.DruidDataSourceConfig$$EnhancerBySpringCGLIB$$85cc750a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 09:24:51.129 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dynamicDataSourceConfig' of type [org.scau.mall.config.datasource.DynamicDataSourceConfig$$EnhancerBySpringCGLIB$$329cd6a7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 09:24:51.765 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[scau-mall-web] 09:24:51.798 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dataSource' of type [org.scau.mall.config.datasource.DynamicDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 09:24:51.801 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'mybatisConfig' of type [org.scau.mall.config.MybatisConfig$$EnhancerBySpringCGLIB$$74d72a3b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 09:24:52.246 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 09:24:52.255 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'pmsClientMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 09:24:52.258 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'pmsClientLoanRecordMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 09:24:52.261 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'clientLoanRecordMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 09:24:52.491 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [org.scau.mall.config.redis.RedisConfig$$EnhancerBySpringCGLIB$$79cdae90] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 09:24:52.911 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$a8db0171] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 09:24:53.107 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5fc8cb53] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[scau-mall-web] 09:24:54.145 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8081 (http)
+[scau-mall-web] 09:24:54.181 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+[scau-mall-web] 09:24:54.215 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+[scau-mall-web] 09:24:54.215 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.29
+[scau-mall-web] 09:24:54.503 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[scau-mall-web] 09:24:54.503 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 5771 ms
+[scau-mall-web] 09:24:54.979 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+[scau-mall-web] 09:24:54.990 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[scau-mall-web] 09:24:54.991 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[scau-mall-web] 09:24:54.991 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[scau-mall-web] 09:24:54.991 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[scau-mall-web] 09:24:56.591 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@146587a2: startup date [Thu Jan 20 09:24:48 CST 2022]; root of context hierarchy
+[scau-mall-web] 09:24:56.747 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/api/v1/customer/index],methods=[GET]}" onto public java.lang.String org.scau.mall.web.controller.CustomerController.index(javax.servlet.http.HttpServletRequest,org.scau.mall.vo.ClientLoadRecordVo)
+[scau-mall-web] 09:24:56.748 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/api/v1/customer/add]}" onto public org.scau.mall.vo.ResponeData<java.lang.Object> org.scau.mall.web.controller.CustomerController.add(javax.servlet.http.HttpServletRequest,org.scau.mall.vo.ClientLoadRecordVo)
+[scau-mall-web] 09:24:56.749 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/api/v1/customer/list]}" onto public org.scau.mall.vo.ResponeData<org.scau.mall.vo.PmsClientShowVo> org.scau.mall.web.controller.CustomerController.list(javax.servlet.http.HttpServletRequest,org.scau.mall.vo.PmsClientQueryVo)
+[scau-mall-web] 09:24:56.749 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/api/v1/customer/middle]}" onto public java.lang.String org.scau.mall.web.controller.CustomerController.middle(org.springframework.ui.ModelMap)
+[scau-mall-web] 09:24:56.749 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/api/v1/customer/encodeImg]}" onto public void org.scau.mall.web.controller.CustomerController.encodeImg(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+[scau-mall-web] 09:24:56.751 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/test/index]}" onto public java.lang.String org.scau.mall.web.controller.IndexController.index(org.springframework.ui.ModelMap)
+[scau-mall-web] 09:24:56.751 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/test/middle]}" onto public java.lang.String org.scau.mall.web.controller.IndexController.middle(org.springframework.ui.ModelMap)
+[scau-mall-web] 09:24:56.752 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/test/encodeImg]}" onto public void org.scau.mall.web.controller.IndexController.encodeImg(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+[scau-mall-web] 09:24:56.753 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/login/index]}" onto public java.lang.String org.scau.mall.web.controller.LoginController.index(org.springframework.ui.ModelMap)
+[scau-mall-web] 09:24:56.753 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/login/submit]}" onto public java.lang.String org.scau.mall.web.controller.LoginController.submit(org.springframework.ui.ModelMap)
+[scau-mall-web] 09:24:56.755 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[scau-mall-web] 09:24:56.756 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[scau-mall-web] 09:24:56.842 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[scau-mall-web] 09:24:56.843 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[scau-mall-web] 09:24:56.968 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[scau-mall-web] 09:24:58.327 [main] INFO  org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+[scau-mall-web] 09:24:59.029 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[scau-mall-web] 09:24:59.054 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+[scau-mall-web] 09:24:59.070 [main] ERROR org.apache.catalina.core.StandardService - Failed to start connector [Connector[HTTP/1.1-8081]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8081]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:265)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:208)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at org.scau.mall.web.MallWebApplication.main(MallWebApplication.java:18)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1020)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1150)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018)
+	... 14 common frames omitted
+[scau-mall-web] 09:24:59.081 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8081"]
+[scau-mall-web] 09:24:59.081 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+[scau-mall-web] 09:24:59.102 [main] INFO  org.apache.catalina.util.LifecycleBase - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+[scau-mall-web] 09:24:59.103 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8081"]
+[scau-mall-web] 09:24:59.103 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8081"]
+[scau-mall-web] 09:24:59.110 [main] INFO  org.springframework.boot.autoconfigure.logging.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+[scau-mall-web] 09:24:59.120 [main] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8081 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8081, or configure this application to listen on another port.
+
+[scau-mall-web] 09:24:59.123 [main] INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@146587a2: startup date [Thu Jan 20 09:24:48 CST 2022]; root of context hierarchy
+[scau-mall-web] 09:24:59.126 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown

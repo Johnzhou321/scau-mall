@@ -1,0 +1,59 @@
+server:
+  port: 8022
+logging:
+  config: classpath:logback-spring.xml
+  
+# druid datasource config
+druid:
+	driverClass: com.mysql.jdbc.Driver
+	url: jdbc:mysql://${mysql.host}/${mysql.database}?useUnicode=true&characterEncoding=utf8&ApplicationName=xrk-mall-drp
+	username: ${mysql.username}
+	password: ${mysql.password}
+	slave:
+		url: jdbc:mysql://${mysql.slave.host}/${mysql.database}?useUnicode=true&characterEncoding=utf8&ApplicationName=xrk-mall-drp-slave
+		username: ${mysql.slave.username}
+		password: ${mysql.slave.password}
+	initialSize: 3
+	minIdle: 3
+	maxActive: 20
+	maxWait: 60000
+	timeBetweenEvictionRunsMillis: 60000
+	minEvictableIdleTimeMillis: 300000
+	validationQuery: SELECT 'x'
+	testWhileIdle: true
+	testOnBorrow: false
+	testOnReturn: false
+
+#spring config
+spring
+	jpa:
+    	show-sql: true
+    	# 指定生成表名的存储引擎为InnoDBD
+	    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+	    hibernate:
+	     	 # 自动创建|更新|验证数据库表结构配置
+			ddl-auto: update
+    #给项目来个名字
+	application:
+  		name: rabbitmq-provider
+  #配置rabbitMq 服务器
+	rabbitmq:
+	    host: 127.0.0.1
+	    port: 5672
+	    username: root
+	    password: root
+		
+#redis config
+redis
+	pool
+		maxTotal: 100
+		maxIdle: 20
+		maxWait: 5000
+	hostname: ${redis.hostname}
+	port: ${redis.port}
+	password: ${redis.password}
+	use_cluster: ${redis.use_cluster}
+	cluster
+		nodes: ${redis.cluster.nodes}
+		timeout: 5000
+		maxRedirections: 10

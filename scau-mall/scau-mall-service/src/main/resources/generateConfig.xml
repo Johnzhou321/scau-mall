@@ -25,23 +25,37 @@
         </javaTypeResolver>
         <!-- 生成模型的包名和位置 -->
         <javaModelGenerator targetPackage="org.scau.mall.service.pojo"
-            targetProject="scau-mall-service/src/main/java">
+            targetProject="src/main/java">
             <property name="enableSubPackages" value="true" />
             <property name="trimStrings" value="true" />
         </javaModelGenerator>
         <!-- 生成映射文件的包名和位置 -->
-        <sqlMapGenerator targetPackage="org.scau.mall.service.mapping"
-            targetProject="scau-mall-service/src/main/resources">
+        <sqlMapGenerator targetPackage="org.scau.mall.service.mapper"
+            targetProject="src/main/resources">
             <property name="enableSubPackages" value="true" />
         </sqlMapGenerator>
         <!-- 生成DAO的包名和位置 -->
         <javaClientGenerator type="XMLMAPPER"
-            targetPackage="org.scau.mall.service.dao"  targetProject="scau-mall-service/src/main/java">
+            targetPackage="org.scau.mall.dao"  targetProject="src/main/java">
             <property name="enableSubPackages" value="true" />
         </javaClientGenerator>
         
         <!-- 要生成哪些表 -->
-        <table tableName="pms_client" domainObjectName="PmsClient"
+        <!-- <table tableName="pms_client" domainObjectName="PmsClient"
+            enableCountByExample="true" enableUpdateByExample="true"
+            enableDeleteByExample="true" enableSelectByExample="true"
+            selectByExampleQueryId="true"></table> 
+            
+        <table tableName="pms_menu" domainObjectName="PmsMenu"
+            enableCountByExample="true" enableUpdateByExample="true"
+            enableDeleteByExample="true" enableSelectByExample="true"
+            selectByExampleQueryId="true"></table>
+        <table tableName="pms_user" domainObjectName="PmsUser"
+        enableCountByExample="true" enableUpdateByExample="true"
+        enableDeleteByExample="true" enableSelectByExample="true"
+        selectByExampleQueryId="true"></table>-->
+        
+        <table tableName="pms_orders" domainObjectName="PmsOrders"
             enableCountByExample="true" enableUpdateByExample="true"
             enableDeleteByExample="true" enableSelectByExample="true"
             selectByExampleQueryId="true"></table>

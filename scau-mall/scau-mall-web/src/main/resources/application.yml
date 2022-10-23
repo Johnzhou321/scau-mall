@@ -1,50 +1,82 @@
 server:
-  port: 8081
+    port: 8082
 logging:
-  config: classpath:logback-spring.xml
-  
+    config: classpath:logback-spring.xml
 # druid datasource config
 druid:
-	driverClass: com.mysql.jdbc.Driver
-	url: jdbc:mysql://${mysql.host}/${mysql.database}?useUnicode=true&characterEncoding=utf8&ApplicationName=xrk-mall-drp
-	username: ${mysql.username}
-	password: ${mysql.password}
-	slave:
-		url: jdbc:mysql://${mysql.slave.host}/${mysql.database}?useUnicode=true&characterEncoding=utf8&ApplicationName=xrk-mall-drp-slave
-		username: ${mysql.slave.username}
-		password: ${mysql.slave.password}
-	initialSize: 3
-	minIdle: 3
-	maxActive: 20
-	maxWait: 60000
-	timeBetweenEvictionRunsMillis: 60000
-	minEvictableIdleTimeMillis: 300000
-	validationQuery: SELECT 'x'
-	testWhileIdle: true
-	testOnBorrow: false
-	testOnReturn: false
-
+    driverClass: com.mysql.jdbc.Driver
+    url: jdbc:mysql://@mysql.host@/@mysql.database@?useUnicode=true&characterEncoding=utf8&ApplicationName=xrk-mall-drp
+    username: '@mysql.username@'
+    password: '@mysql.password@'
+    slave:
+        url: jdbc:mysql://'@mysql.slave.host@'/'@mysql.database@'?useUnicode=true&characterEncoding=utf8&ApplicationName=xrk-mall-drp-slave
+        username: '@mysql.slave.username@'
+        password: '@mysql.slave.password@'
+    initialSize: 3
+    minIdle: 3
+    maxActive: 20
+    maxWait: 60000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 'x'
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
 #spring config
-spring
-	jpa:
-    show-sql: true
-    # 指定生成表名的存储引擎为InnoDBD
-    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
-    hibernate:
-      # 自动创建|更新|验证数据库表结构配置
-      ddl-auto: update
-		
+spring:
+    jpa:
+        show-sql: true
+        # 指定生成表名的存储引擎为InnoDBD
+        database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+        hibernate:
+            #自动创建|更新|验证数据库表结构配置
+            ddl-auto: update
+    #给项目来个名字
+    application:
+        name: scau-mall-web
+    #freemarker配置--start
+    #缓存  
+    freemarker:
+        cache: false
+        charset: UTF-8
+        content-type: text/html
+        expose-request-attributes: true
+        expose-session-attributes: true
+        template-loader-path: classpath:/templates/
+        suffix: .ftl
+        request-context-attribute: request
+        # freemarker setting
+        settings:
+            number_format: #
+            default_encoding: UTF-8
+            datetime_format: yyyy-MM-dd HH:mm:ss
+            date_format: yyyy-MM-dd
+            time_format: HH:mm:ss
+            locale: zh_CN
+            classic_compatible: true
 #redis config
-redis
-	pool
-		maxTotal: 100
-		maxIdle: 20
-		maxWait: 5000
-	hostname: ${redis.hostname}
-	port: ${redis.port}
-	password: ${redis.password}
-	use_cluster: ${redis.use_cluster}
-	cluster
-		nodes: ${redis.cluster.nodes}
-		timeout: 5000
-		maxRedirections: 10
+redis:
+    pool:
+        maxTotal: 100
+        maxIdle: 20
+        maxWait: 5000
+    hostname: '@redis.hostname@'
+    port: '@redis.port@'
+    password: '@redis.password@'
+    use_cluster: '@redis.use_cluster@'
+    cluster:
+        nodes: '@redis.cluster.nodes@'
+        timeout: 5000
+        maxRedirections: 10
+#jwt设置
+# JWT存储的请求头
+jwt:
+    tokenHeader: Authorization
+    # JWT 加解密使用的密钥
+    secret: scau123456
+    # JWT的超期限时间（60*60*24）
+    expiration: 604800
+    # JWT 负载中拿到开头
+    tokenHead: Bearer
+domain:
+    url: '@domain.url@'
