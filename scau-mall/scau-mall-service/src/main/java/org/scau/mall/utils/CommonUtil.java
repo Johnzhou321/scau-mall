@@ -6,9 +6,9 @@ import java.util.Random;
 
 public class CommonUtil {
     
-    public static void main(String[] args) {
-        System.out.println(newUnusedOrderNo());
-    }
+//    public static void main(String[] args) {
+//        System.out.println(newUnusedOrderNo());
+//    }
     
     public static String newUnusedOrderNo() {
         String orderNo = getDatePrefix() + random(4);//年月日+4位随机数

@@ -142,13 +142,13 @@ public class BeanUtil {
         }
     }
     
-    public static void main(String[] args) throws IllegalAccessException, IllegalArgumentException, InvocationTargetException, NoSuchMethodException, SecurityException {
-        /*XmOrders order = new XmOrders();
-        order.setAgentUserNo("11111");
-        order.setOrderStatus(1);
-        order.setCreatedAt(new Date());
-        System.out.println(camelToUnderline4Object(order));*/
-    }
+//    public static void main(String[] args) throws IllegalAccessException, IllegalArgumentException, InvocationTargetException, NoSuchMethodException, SecurityException {
+//        /*XmOrders order = new XmOrders();
+//        order.setAgentUserNo("11111");
+//        order.setOrderStatus(1);
+//        order.setCreatedAt(new Date());
+//        System.out.println(camelToUnderline4Object(order));*/
+//    }
     
     
 }

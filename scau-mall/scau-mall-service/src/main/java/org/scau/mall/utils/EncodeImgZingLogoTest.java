@@ -10,17 +10,17 @@ import java.io.File;
  **/
 public class EncodeImgZingLogoTest {
 
-    public static void main(String[] args) {
-        String contents = "http://blog.csdn.net/typa01_kk";
-        String format = "jpeg"; //***此处如果格式为"gif"，则logo图片为黑色，其他格式ok
-        //生成二维码
-        File logoImg = new File("C:\\Users\\John\\Desktop\\测试用图片\\身份证\\1990年-正面.png");
-        File img = new File("D:"+File.separator+"csdn.jpg");
-        EncodeImgZxing.writeToFile(contents, format, img);
-//      //添加logo图片
-        File img1 = new File("D:"+File.separator+"csdnlogo.jpg");
-        EncodeImgZingLogo.writeToFile(img, logoImg, format, img1);
-    }
+//    public static void main(String[] args) {
+//        String contents = "http://blog.csdn.net/typa01_kk";
+//        String format = "jpeg"; //***此处如果格式为"gif"，则logo图片为黑色，其他格式ok
+//        //生成二维码
+//        File logoImg = new File("C:\\Users\\John\\Desktop\\测试用图片\\身份证\\1990年-正面.png");
+//        File img = new File("D:"+File.separator+"csdn.jpg");
+//        EncodeImgZxing.writeToFile(contents, format, img);
+////      //添加logo图片
+//        File img1 = new File("D:"+File.separator+"csdnlogo.jpg");
+//        EncodeImgZingLogo.writeToFile(img, logoImg, format, img1);
+//    }
 
 
 }

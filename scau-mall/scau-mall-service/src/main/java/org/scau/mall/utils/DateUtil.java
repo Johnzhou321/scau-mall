@@ -1310,13 +1310,13 @@ public final class DateUtil {
         return calendar.getTime();
     }
 
-    public static void main(String[] args) {
-        String aa="2021-07-04 00:00:00";
-        Date date=DateUtil.parseDate(aa,DATE_TIME_FORMATE_YYYY_MM_DD_HH_MM_SS);
-        String bb="2021-07-13 23:59:59";
-        Date date2=DateUtil.parseDate(bb, DATE_TIME_FORMATE_YYYY_MM_DD_HH_MM_SS);
-        
-    }
+//    public static void main(String[] args) {
+//        String aa="2021-07-04 00:00:00";
+//        Date date=DateUtil.parseDate(aa,DATE_TIME_FORMATE_YYYY_MM_DD_HH_MM_SS);
+//        String bb="2021-07-13 23:59:59";
+//        Date date2=DateUtil.parseDate(bb, DATE_TIME_FORMATE_YYYY_MM_DD_HH_MM_SS);
+//        
+//    }
     
     public static Date asDate(LocalDateTime localDateTime) {
         return Date.from(localDateTime.atZone(ZoneId.systemDefault()).toInstant());

@@ -5,7 +5,6 @@ import java.awt.Font;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 import java.io.File;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.net.URL;
@@ -103,12 +102,12 @@ public class ImgUtils {
         System.out.println("生成成功");
 	}
 	
-	public static void main(String[] args) {
-		try {
-			drawImage("http://127.0.0.1:8081/test/middle", new FileOutputStream("C:\\Users\\John\\Desktop\\贷款\\图片\\qrcode_new.png"), "jpeg");
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
+//	public static void main(String[] args) {
+//		try {
+//			drawImage("http://127.0.0.1:8081/test/middle", new FileOutputStream("C:\\Users\\John\\Desktop\\贷款\\图片\\qrcode_new.png"), "jpeg");
+//		} catch (IOException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//	}
 }
